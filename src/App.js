@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable import/no-named-as-default */
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable camelcase */
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable react/prop-types */
+/* eslint-disable react-hooks/exhaustive-deps */
+
+import './styles/app.scss';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer';
+import Main from './components/Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Header />
+
+      <Main />
+
+      <Footer />
     </div>
   );
 }

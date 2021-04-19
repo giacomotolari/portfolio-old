@@ -1,0 +1,58 @@
+#logo {
+  margin:5px;
+  width: 50px;
+  height: 65px;
+}
+
+.navBar {
+  margin: -7vh 5vw 0 63vw;
+
+  .navBar-components {
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: bold;
+  }
+  .navLink:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px brown, 0 100px 80px red;
+  }
+
+  #home-icon {
+    display: none;
+  }
+
+  #menu-icon {
+    display: none;
+    color: $color-white;
+    margin: 0 0 3px 15vw;
+  }
+  #menu-icon:hover {
+    color: $color-yellow;
+    border: $color-white 1px solid;
+  }
+
+  @media only screen and (max-width: 1120px) {
+    .navBar {
+      margin: 10px 5vw 0px 40vw;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .navBar-components {
+      display: none;
+    }
+    #menu-icon {
+      display: block;
+    }
+  }
+
+  button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+  }
+}

@@ -1,0 +1,52 @@
+.card-group {
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .project-wrapper {
+    display: none;
+    background-color: yellow;
+    border: solid white 1px;
+    border-radius: 2%;
+    box-shadow: 0 10px 8px -6px whitesmoke;
+    width: 250px;
+    height: 380px;
+    margin: 20px;
+
+    .img-wrapper {
+      border: white 2px solid;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+
+      // .img-project {
+      //   border-radius: 2%;
+      // }
+    }
+    .card-text-wrapper {
+      padding: 8px;
+    }
+    .cardTitle {
+      text-align: center;
+      color: brown;
+      font-style: italic;
+      font-family: serif;
+      font-weight: bolder;
+    }
+    .cardMuted {
+    }
+  }
+
+  .icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+    .project_icons {
+      width: 2.5vmax;
+      margin: 3%;
+      // border: solid 1px red;
+    }
+  }
+}
