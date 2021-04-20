@@ -25,6 +25,8 @@
   #menu-icon {
     display: none;
     color: $color-white;
+    width: 36px;
+    height: 36px;
     margin: 0 0 3px 15vw;
   }
   #menu-icon:hover {
@@ -38,12 +40,13 @@
     }
   }
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 500px) {
     .navBar-components {
       display: none;
     }
     #menu-icon {
       display: block;
+      
     }
   }
 

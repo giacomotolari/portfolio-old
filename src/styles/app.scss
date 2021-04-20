@@ -1,64 +1,25 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-
 .App {
-    @import "./variables";
-    @import "./navbar";
-    @import "./header";
-    @import "./footer";
+  @import './variables';
+  @import './navbar';
+  @import './header';
+  @import './footer';
+  @import './main';
 
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../data/images/background-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 20% 20%;
-    
-    .navLink {
-      text-decoration: none;
-      color: $color-yellow;
-      margin: 5px;
-    }
-  
-    .navLink:hover {
-      color: brown;
-      font-size: 1.05em;
-    }
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../data/images/background-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 40%;
+
+  .navLink {
+    text-decoration: none;
+    color: $color-yellow;
+    margin: 5px;
   }
-  
-  
-  
-  #main-wrapper {
-    // border: solid 1px red;
-    width: 100vw;
-    height: 600px;
-  
-    .home-paragraph {
-      position: relative;
-      margin: 30px 0 0 90px;
-      font-family: sans-serif;
-      text-transform: uppercase;
-      font-size: 2em;
-      letter-spacing: 4px;
-      overflow: hidden;
-      background: linear-gradient(90deg, #000, #fff, #000);
-      background-repeat: no-repeat;
-      background-size: 80%;
-      animation: animate 12s linear infinite;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    }
-  
-    @keyframes animate {
-      0% {
-        background-position: -500%;
-      }
-      100% {
-        background-position: 500%;
-      }
-    }
+
+  .navLink:hover {
+    color: brown;
+    font-size: 1.05em;
   }
-  
+}
