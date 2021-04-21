@@ -3,7 +3,8 @@ import React from 'react';
 import Navbar from './Navbar';
 
 const Header = () => {
-  return <Navbar />;
+  return (
+  <div className="header-wrapper"><Navbar /></div>);
 };
 
 export default Header;
