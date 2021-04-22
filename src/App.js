@@ -6,21 +6,24 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
 /* eslint-disable react-hooks/exhaustive-deps */
-
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './styles/app.scss';
-import Header from './components/Header.jsx';
-import Footer from './components/Footer';
-import Main from './components/Main';
+import Header from './components/header/Header.jsx';
+import Footer from './components/footer/Footer';
+import Main from './components/main/Main';
 
 function App() {
   return (
-    <div className='App'>
-      <Header />
+    <Router>
+      <div className='App'>
+        <Header />
 
-      <Main />
+        <Main />
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
