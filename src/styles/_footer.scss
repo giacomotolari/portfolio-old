@@ -1,43 +1,39 @@
-.footer-wrapper {
-  border: solid 1px blue;
+.Footer {
+  // border: solid 1px blue;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  // margin: 0 0 0 70px;
-  padding-left: 3vw;
+ 
+
+  // padding-left: 3vw;
 
   svg {
-    margin: 5px;
+    margin-left: 2vw;
     width: 20px;
     height: 20px;
   }
+
 
 
   @media only screen and (max-width: 350px) {
     svg {
       width: 18px;
       height: 18px;
-      margin-left: 2px;
     }
   }
-  
+
   @media only screen and (max-width: 250px) {
     svg {
       width: 16px;
       height: 16px;
-      margin-left: 1px;
     }
   }
-  
-  
+
   svg:hover {
     width: 1.5em;
     height: 1.2em;
   }
-  
-
-
-
 }
 
 // .apparition-wrapper {
@@ -154,3 +150,9 @@
 //     }
 //   }
 
+
+@media only screen and (max-width: 500px) {
+  .Footer {
+   margin-top: 5vh;
+  }
+}

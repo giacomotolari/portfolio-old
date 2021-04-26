@@ -7,7 +7,7 @@ import React from 'react';
 const Footer = () => {
   return (
     
-    <div className="footer-wrapper">
+    <div className="Footer">
       <div className="icons-wrapper">
       
       {/* Github icon  */}

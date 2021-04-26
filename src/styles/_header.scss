@@ -19,6 +19,39 @@
 //   }
 // }
 
-.header-wrapper {
-  border: solid 1px yellow;
+.Header {
+  margin-top: -2.4vh;
+
+  #logo {
+    position: absolute;
+    left: 0.5%;
+    top: 0.5%;
+    width: 60px;
+    height: 45px;
+  }
+  #menu-icon {
+    display: none;
+    color: $color-white;
+    width: 46px;
+    height: 46px;
+  }
+  #menu-icon:hover {
+    color: $color-yellow;
+    border: $color-white 1px solid;
+  }
+
+  @media only screen and (max-width: 500px) {
+    #menu-icon {
+      display: block;
+      position: absolute;
+      right: 5vw;
+      top: 2vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Header {
+    margin-top: 0;
+  }
 }

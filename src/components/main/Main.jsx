@@ -8,7 +8,7 @@ import Contact from './contact/Contact';
 
 const Main = () => {
   return (
-    <div id='main-wrapper'>
+    <div className='Main'>
        {/* <p className='home-paragraph'>
         &lt;h2&gt;welcome to Giacomo's page &lt;/h2&gt;
       </p> */}
