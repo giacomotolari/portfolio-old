@@ -2,35 +2,63 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import navbarfunctions from './navbarFunctions.js';
+
+function displayHome() {
+  document.getElementById('navHome').style.display = 'none';
+  document.getElementById('navProjects').style.display = 'block';
+  document.getElementById('navAbout').style.display = 'block';
+  document.getElementById('navContact').style.display = 'block';
+}
+function displayProjects() {
+  document.getElementById('navHome').style.display = 'block';
+  document.getElementById('navProjects').style.display = 'none';
+  document.getElementById('navAbout').style.display = 'block';
+  document.getElementById('navContact').style.display = 'block';
+}
+
+function displayAbout() {
+  document.getElementById('navHome').style.display = 'block';
+  document.getElementById('navProjects').style.display = 'block';
+  document.getElementById('navAbout').style.display = 'none';
+  document.getElementById('navContact').style.display = 'block';
+}
+
+function displayContact() {
+  document.getElementById('navHome').style.display = 'block';
+  document.getElementById('navProjects').style.display = 'block';
+  document.getElementById('navAbout').style.display = 'block';
+  document.getElementById('navContact').style.display = 'none';
+}
 
 const Navbar = () => {
   return (
     <div className='Navbar'>
-      <nav className='navBar-components'>
-        <ul>
-          <li>
-            <Link id='navHome' className='navLink' to='/'>
-              HOME
-            </Link>
-          </li>
-          <li>
-            <Link id='navProjects' className='navLink' to='/projects'>
-              PROJECTS
-            </Link>
-          </li>
-          <li>
-            <Link id='navAbout' className='navLink' to='/about'>
-              ABOUT
-            </Link>
-          </li>
+<nav className='navBar-components'>
+<ul>
+<li onClick={displayHome}>
+    <Link id='navHome' className='navLink' to='/'>
+      HOME
+    </Link>
+  </li>
+  <li onClick={displayProjects}>
+    <Link id='navProjects' className='navLink' to='/projects'>
+      PROJECTS
+    </Link>
+  </li>
+  <li onClick={displayAbout}>
+    <Link id='navAbout' className='navLink' to='/about'>
+      ABOUT
+    </Link>
+  </li>
 
-          <li>
-            <Link id='navContact' className='navLink' to='/contact'>
-              CONTACT
-            </Link>
-          </li>
-        </ul>
-      </nav>
+  <li onClick={displayContact}>
+    <Link id='navContact' className='navLink' to='/contact'>
+      CONTACT
+    </Link>
+  </li>
+</ul>
+</nav>
       {/* WhatsApp icon  */}
       {/* <a
         className="navLink"

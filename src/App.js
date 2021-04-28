@@ -13,10 +13,13 @@ import Header from './components/header/Header.jsx';
 import Footer from './components/footer/Footer';
 import Main from './components/main/Main';
 
+
+
+
 function App() {
   return (
     <Router>
-      <div className='App'>
+      <div className='App' id='app-background'>
         <Header />
 
         <Main />

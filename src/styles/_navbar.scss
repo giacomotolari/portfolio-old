@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 
 .Navbar {
-
-
-
   ul {
     display: flex;
     flex-direction: row;
@@ -26,8 +23,6 @@
   #navHome {
     display: none;
   }
- 
-  
 
   @media only screen and (max-width: 1120px) {
     .navBar-components {
@@ -39,6 +34,12 @@
     .navBar-components {
       display: none;
     }
-   
+    ul {
+      font-size: large;
+    }
+  }
+  button {
+    margin: 150px;
+    color: red;
   }
 }
