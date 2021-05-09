@@ -4,11 +4,14 @@ import { Switch, Route } from 'react-router-dom';
 import Projects from './projects/Projects';
 import About from './about/About';
 import Contact from './contact/Contact';
+import Home from './home/Home'
+import BurgerMenu from "./BurgerMenu";
 // import CardGroup from "./CardGroup";
 
 const Main = () => {
   return (
     <div className='Main'>
+      
        {/* <p className='home-paragraph'>
         &lt;h2&gt;welcome to Giacomo's page &lt;/h2&gt;
       </p> */}
@@ -16,6 +19,9 @@ const Main = () => {
       {/* <CardGroup /> */}
 
         <Switch>
+        <Route path='/home'>
+            <Home />
+          </Route>
           <Route path='/projects'>
             <Projects/>
           </Route>
@@ -24,6 +30,9 @@ const Main = () => {
           </Route>
           <Route path='/contact'>
             <Contact />
+          </Route>
+          <Route path='/navbarmobil'>
+            <BurgerMenu />
           </Route>
         </Switch>
       

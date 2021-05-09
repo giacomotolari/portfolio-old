@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 
 .Navbar {
-  ul {
+  .navbarUl {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     font-size: large;
     font-weight: bold;
     padding-top: 1vh;
+  
+   
   }
 
+
+
   .navLink {
+    text-decoration: none;
+    color: $color-yellow;
+    margin: 5px;
     margin: 0 8vw 0 0vw;
   }
   .navLink:hover {
@@ -20,26 +27,17 @@
       0 100px 80px red;
   }
 
-  #navHome {
-    display: none;
-  }
+  // #navHome {
+  //   color: red;
+  //   font-size: 200%;
+  // }
 
-  @media only screen and (max-width: 1120px) {
-    .navBar-components {
-      // margin: 10px 5vw 0px 40vw;
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    .navBar-components {
+  @media only screen and (max-width: 750px) {
+    .navbarUl {
       display: none;
     }
     ul {
       font-size: large;
     }
-  }
-  button {
-    margin: 150px;
-    color: red;
   }
 }

@@ -1,11 +1,10 @@
 html {
   background-color: black;
-  
 }
-
 
 .App {
   @import './variables';
+  @import './home';
   @import './navbar';
   @import './header';
   @import './footer';
@@ -13,6 +12,7 @@ html {
   @import './about';
   @import './projects';
   @import './contact';
+  @import './burgerMenu';
 
   @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 
@@ -33,22 +33,19 @@ html {
     color: brown;
     font-size: 1.05em;
   }
-  
 }
 
+// #app-background {
+//   background-image: url('../asset/images/background-image.jpg');
+//   background-repeat: no-repeat;
+//   background-size: 70%;
+//   background-position: -35% 55%;
+// }
 
-#app-background {
-  background-image: url('../asset/images/background-image.jpg');
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: 15% 15%;
-}
-
-@media only screen and (max-width: 500px) {
-  #app-background {
-    background-repeat: no-repeat;
-    background-size: 140%;
-    background-position: 40% 40%;
-  }
-}
-
+// @media only screen and (max-width: 750px) {
+//   #app-background {
+//     background-repeat: no-repeat;
+//     background-size: 140%;
+//     background-position: 40% 70%;
+//   }
+// }

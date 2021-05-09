@@ -1,12 +1,13 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 
-const Contact = () => {
+
+const Skills = () => {
   return (
-    <div className='Contact'>
-   
+    <div className="Skills">
+
     </div>
   );
 };
 
-export default Contact;
+export default Skills;

@@ -1,4 +1,8 @@
-const navbarFunctions = () => {
+
+
+
+ 
+    
   function displayHome() {
     document.getElementById('navHome').style.display = 'none';
     document.getElementById('navProjects').style.display = 'block';
@@ -25,6 +29,8 @@ const navbarFunctions = () => {
     document.getElementById('navAbout').style.display = 'block';
     document.getElementById('navContact').style.display = 'none';
   }
+ 
+
 };
 
-export default navbarFunctions;
+export default NavbarFunctions;

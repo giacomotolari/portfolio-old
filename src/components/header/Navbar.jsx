@@ -5,60 +5,110 @@ import { Link } from 'react-router-dom';
 // import navbarfunctions from './navbarFunctions.js';
 
 function displayHome() {
-  document.getElementById('navHome').style.display = 'none';
-  document.getElementById('navProjects').style.display = 'block';
-  document.getElementById('navAbout').style.display = 'block';
-  document.getElementById('navContact').style.display = 'block';
+  // NAVBAR-HOME STYLE
+  document.getElementById('navHome').style.color = 'red';
+  document.getElementById('navHome').style['font-size'] = '200%';
+  document.getElementById('navProjects').style.color = '#fdb827';
+  document.getElementById('navProjects').style['font-size'] = '100%';
+  document.getElementById('navAbout').style.color = '#fdb827';
+  document.getElementById('navAbout').style['font-size'] = '100%';
+  document.getElementById('navContact').style.color = '#fdb827';
+  document.getElementById('navContact').style['font-size'] = '100%';
+  // HOME-BACKGROUND STYLE
+  document.getElementById('app-background').style.backgroundImage = 'block';
+  // HOME-FOOTER STYLE
+  document.getElementById('iconsWrapper').style.display = 'block';
 }
 function displayProjects() {
-  document.getElementById('navHome').style.display = 'block';
-  document.getElementById('navProjects').style.display = 'none';
-  document.getElementById('navAbout').style.display = 'block';
-  document.getElementById('navContact').style.display = 'block';
+  // NAVBAR-PROJECTS STYLE
+  document.getElementById('navHome').style.color = '#fdb827';
+  document.getElementById('navHome').style['font-size'] = '100%';
+  document.getElementById('navProjects').style.color = 'red';
+  document.getElementById('navProjects').style['font-size'] = '200%';
+  document.getElementById('navAbout').style.color = '#fdb827';
+  document.getElementById('navAbout').style['font-size'] = '100%';
+  document.getElementById('navContact').style.color = '#fdb827';
+  document.getElementById('navContact').style['font-size'] = '100%';
+  // PROJECTS-BACKGROUND STYLE
+  document.getElementById('app-background').style.backgroundImage = 'none';
+  // PROJECT-FOOTER STYLE
+  document.getElementById('iconsWrapper').style.display = 'block';
 }
 
 function displayAbout() {
-  document.getElementById('navHome').style.display = 'block';
-  document.getElementById('navProjects').style.display = 'block';
-  document.getElementById('navAbout').style.display = 'none';
-  document.getElementById('navContact').style.display = 'block';
+  // NAVBAR-ABOUT STYLE
+  document.getElementById('navHome').style.color = '#fdb827';
+  document.getElementById('navHome').style['font-size'] = '100%';
+  document.getElementById('navProjects').style.color = '#fdb827';
+  document.getElementById('navProjects').style['font-size'] = '100%';
+  document.getElementById('navAbout').style.color = 'red';
+  document.getElementById('navAbout').style['font-size'] = '200%';
+  document.getElementById('navContact').style.color = '#fdb827';
+  document.getElementById('navContact').style['font-size'] = '100%';
+  // ABOUT-BACKGROUND STYLE
+  document.getElementById('app-background').style.backgroundImage = 'none';
+  // ABOUT-FOOTER STYLE
+  document.getElementById('iconsWrapper').style.display = 'none';
 }
 
 function displayContact() {
-  document.getElementById('navHome').style.display = 'block';
-  document.getElementById('navProjects').style.display = 'block';
-  document.getElementById('navAbout').style.display = 'block';
-  document.getElementById('navContact').style.display = 'none';
+  // NAVBAR-CONTACT STYLE
+  document.getElementById('navHome').style.color = '#fdb827';
+  document.getElementById('navHome').style['font-size'] = '100%';
+  document.getElementById('navProjects').style.color = '#fdb827';
+  document.getElementById('navProjects').style['font-size'] = '100%';
+  document.getElementById('navAbout').style.color = '#fdb827';
+  document.getElementById('navAbout').style['font-size'] = '100%';
+  document.getElementById('navContact').style.color = 'red';
+  document.getElementById('navContact').style['font-size'] = '200%';
+  // CONTACT-BACKGROUND STYLE
+  document.getElementById('app-background').style.backgroundImage = 'none';
+  // CONTACT-FOOTER STYLE
+  document.getElementById('iconsWrapper').style.display = 'block';
 }
 
 const Navbar = () => {
   return (
     <div className='Navbar'>
-<nav className='navBar-components'>
-<ul>
-<li onClick={displayHome}>
-    <Link id='navHome' className='navLink' to='/'>
-      HOME
-    </Link>
-  </li>
-  <li onClick={displayProjects}>
-    <Link id='navProjects' className='navLink' to='/projects'>
-      PROJECTS
-    </Link>
-  </li>
-  <li onClick={displayAbout}>
-    <Link id='navAbout' className='navLink' to='/about'>
-      ABOUT
-    </Link>
-  </li>
+      <nav className='navBar-components'>
+        <ul className='navbarUl navbarUlColumn'>
+          <li onClick={displayHome}>
+            <Link id='navHome' className='navLink' to='home'>
+              HOME
+            </Link>
+          </li>
+          <li onClick={displayProjects}>
+            <Link id='navProjects' className='navLink' to='/projects'>
+              PROJECTS
+            </Link>
+          </li>
+          <li onClick={displayAbout}>
+            <Link id='navAbout' className='navLink' to='/about'>
+              ABOUT
+            </Link>
+          </li>
 
-  <li onClick={displayContact}>
-    <Link id='navContact' className='navLink' to='/contact'>
-      CONTACT
-    </Link>
-  </li>
-</ul>
-</nav>
+          <li onClick={displayContact}>
+            <Link id='navContact' className='navLink' to='/contact'>
+              CONTACT
+            </Link>
+          </li>
+        </ul>
+        <Link to='/navbarmobil'>
+          <svg
+            id='menu-icon'
+            xmlns='http://www.w3.org/2000/svg'
+            fill='currentColor'
+            className='bi bi-list'
+            viewBox='0 0 16 16'
+          >
+            <path
+              fillRule='evenodd'
+              d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'
+            />
+          </svg>
+        </Link>
+      </nav>
       {/* WhatsApp icon  */}
       {/* <a
         className="navLink"
