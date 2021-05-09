@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import Images from '../../data/images.json';
+// import Images from '../../data/images.json';
 
 const Footer = () => {
   return (
