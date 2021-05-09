@@ -1,53 +1,63 @@
 .Home {
+  // border: 1px solid red;
   padding: 6vw;
   color: $color-white;
   font-size: 110%;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column;
   position: relative;
-  top: 1vh;
+  top: -9vh;
   right: 2vw;
 }
-@media only screen and (max-width: 1299px) {
+@media only screen and (min-width: 1299px) {
   .Home {
-    display: flex;
-    flex-direction: column;
-
   }
 }
 @media only screen and (min-width: 749px) and (max-width: 1299px) {
-  .Home {
-    top: 4vh;
+  .home-wrapper-left {
+    position: relative;
+    top: 8vh;
   }
 }
 @media only screen and (min-width: 499px) and (max-width: 748px) {
-  .Home {
-    top: 15vh;
+  .home-wrapper-left {
+    position: relative;
+    top: 16vh;
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 498px) {
   .Home {
-    top: 21vh;
+    top: 10vh;
   }
 }
 @media only screen and (max-width: 299px) {
   .Home {
-    top: 21vh;
+    top: 11vh;
   }
 }
 .home-wrapper-left {
-  // border: 1px solid red;
-  width: max-content;
+  width: 80vw;
   height: max-content;
+  padding-left: 5vw;
+  position: relative;
 }
+
 .home-wrapper-right {
-  // border: 1px solid red;
+  // border: 1px solid yellow;
   background-image: url('../asset/images/background-image.jpg');
   background-size: cover;
-  // border: 1px solid red;
+  background-repeat: no-repeat;
+  background-position: 90% 60%;
   width: 80vw;
-  height: 60vh;
+  height: 55vh;
+}
+
+@media only screen and (min-width: 1050px)  {
+  .home-wrapper-right {
+    background-position: 1% 50%;
+    background-size: 120%;
+    
+  }
 }
 
 @media only screen and (min-width: 750px) and (max-width: 1049px) {
@@ -59,19 +69,24 @@
 @media only screen and (min-width: 500px) and (max-width: 749px) {
   .home-wrapper-right {
     background-position: 50% 50%;
-    height: 50vh;
+    height: 70vh;
     width: 100vw;
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 499px) {
   .home-wrapper-right {
+    background-size: 140%;
+
     background-position: 50% 50%;
-    height: 50vh;
-    width: 100vw;
+    width: 90vw;
+    height: 40vh;
   }
 }
-// @media only screen and (min-width: 500px) and (max-width: 749px) {
-//   .home-wrapper-right {
-//     background-position: 50% 50%;
-//   }
-// }
+@media only screen and (max-width: 299px)  {
+  .home-wrapper-right {
+    background-size: 140%;
+    background-position: 50% 50%;
+    width: 90vw;
+    height: 40vh;
+  }
+}

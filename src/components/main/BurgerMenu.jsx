@@ -9,7 +9,7 @@ const BurgerMenu = () => {
       
         <ul className='navbarBurgerMenu'>
           <li>
-            <Link id='navHome' className='navLinkBurgerMenu' to='home'>
+            <Link id='navHome' className='navLinkBurgerMenu' to='/home'>
               HOME
             </Link>
           </li>

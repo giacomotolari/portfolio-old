@@ -15,7 +15,7 @@ function displayHome() {
   document.getElementById('navContact').style.color = '#fdb827';
   document.getElementById('navContact').style['font-size'] = '100%';
   // HOME-BACKGROUND STYLE
-  document.getElementById('app-background').style.backgroundImage = 'block';
+  // document.getElementById('app-background').style.backgroundImage = 'block';
   // HOME-FOOTER STYLE
   document.getElementById('iconsWrapper').style.display = 'block';
 }
@@ -30,7 +30,7 @@ function displayProjects() {
   document.getElementById('navContact').style.color = '#fdb827';
   document.getElementById('navContact').style['font-size'] = '100%';
   // PROJECTS-BACKGROUND STYLE
-  document.getElementById('app-background').style.backgroundImage = 'none';
+  // document.getElementById('app-background').style.backgroundImage = 'none';
   // PROJECT-FOOTER STYLE
   document.getElementById('iconsWrapper').style.display = 'block';
 }
@@ -46,7 +46,7 @@ function displayAbout() {
   document.getElementById('navContact').style.color = '#fdb827';
   document.getElementById('navContact').style['font-size'] = '100%';
   // ABOUT-BACKGROUND STYLE
-  document.getElementById('app-background').style.backgroundImage = 'none';
+  // document.getElementById('app-background').style.backgroundImage = 'none';
   // ABOUT-FOOTER STYLE
   document.getElementById('iconsWrapper').style.display = 'none';
 }
@@ -62,7 +62,7 @@ function displayContact() {
   document.getElementById('navContact').style.color = 'red';
   document.getElementById('navContact').style['font-size'] = '200%';
   // CONTACT-BACKGROUND STYLE
-  document.getElementById('app-background').style.backgroundImage = 'none';
+  // document.getElementById('app-background').style.backgroundImage = 'none';
   // CONTACT-FOOTER STYLE
   document.getElementById('iconsWrapper').style.display = 'block';
 }
@@ -73,7 +73,7 @@ const Navbar = () => {
       <nav className='navBar-components'>
         <ul className='navbarUl navbarUlColumn'>
           <li onClick={displayHome}>
-            <Link id='navHome' className='navLink' to='home'>
+            <Link id='navHome' className='navLink' to='/home'>
               HOME
             </Link>
           </li>
@@ -94,7 +94,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <Link to='/navbarmobil'>
+        <Link to='/burgermenu'>
           <svg
             id='menu-icon'
             xmlns='http://www.w3.org/2000/svg'

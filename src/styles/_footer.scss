@@ -1,13 +1,10 @@
 .Footer {
   // border: solid 1px blue;
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
-  flex-wrap: wrap;
-  margin-top: -4vh;
+  position: fixed;
+  margin-top: -6vh;
   margin-left: 3vw;
-
- 
 
   // padding-left: 3vw;
 
@@ -15,10 +12,7 @@
     margin-left: 2vw;
     width: 28px;
     height: 28px;
-    
   }
-
-
 
   @media only screen and (max-width: 350px) {
     svg {
@@ -153,7 +147,6 @@
 //       transform: translateY(100%) scale(1) scaleY(1);
 //     }
 //   }
-
 
 @media only screen and (max-width: 500px) {
   .Footer {

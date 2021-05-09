@@ -31,7 +31,7 @@ const Main = () => {
           <Route path='/contact'>
             <Contact />
           </Route>
-          <Route path='/navbarmobil'>
+          <Route path='/burgermenu'>
             <BurgerMenu />
           </Route>
         </Switch>
