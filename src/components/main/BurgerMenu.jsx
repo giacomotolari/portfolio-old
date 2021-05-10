@@ -2,6 +2,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+function displayContactBurger() {
+  // NAVBAR-CONTACT STYLE
+  
+  // CONTACT-BACKGROUND STYLE
+ 
+  // CONTACT-FOOTER STYLE
+  document.getElementById('iconsWrapper').style.display = 'none';
+}
+
 
 const BurgerMenu = () => {
   return (
@@ -25,7 +34,7 @@ const BurgerMenu = () => {
           </li>
 
           <li>
-            <Link id='navContact' className='navLinkBurgerMenu' to='/contact'>
+            <Link onClick={displayContactBurger} id='navContact' className='navLinkBurgerMenu' to='/contact'>
               CONTACT
             </Link>
           </li>

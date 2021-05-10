@@ -37,10 +37,10 @@
       font-size: calc(1em + 0.3vw);
     }
     @media only screen and (max-width: 400px) {
-        h2 {
-          display: none;
-        }
+      h2 {
+        display: none;
       }
+    }
 
     .form {
       display: flex;
@@ -120,6 +120,7 @@
     svg {
       width: 1.5em;
       height: 1.5em;
+      color: white;
       margin-right: 1vw;
     }
     svg:hover {
