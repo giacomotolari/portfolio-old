@@ -64,7 +64,7 @@ function displayContact() {
   // CONTACT-BACKGROUND STYLE
   // document.getElementById('app-background').style.backgroundImage = 'none';
   // CONTACT-FOOTER STYLE
-  document.getElementById('iconsWrapper').style.display = 'none';
+  document.getElementById('iconsWrapper').style.display = 'block';
 }
 
 const Navbar = () => {
