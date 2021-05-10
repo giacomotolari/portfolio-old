@@ -6,27 +6,57 @@
   align-items: center;
   font-size: large;
   font-weight: bold;
-
   height: 70vh;
+  max-width: 100vw;
   margin-top: 5vh;
+  background-image: url('../asset/images/background-image.jpg');
+  background-position: 100% -20%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+
+  li {
+    margin-top: 7vh;
+    margin-right: 10vw;
+    list-style: none;
+  }
+  .navbarBurgerMenu {
+    font-size: large;
+    font-weight: bold;
+    padding-top: 1vh;
+    position: relative;
+    top: 8vh;
+  }
+
+  .navLinkBurgerMenu {
+    text-decoration: none;
+    color: $color-yellow;
+  }
+
+  .navLinkBurgerMenu:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px brown,
+      0 100px 80px red;
+    color: brown;
+    font-size: 1.05em;
+  }
 }
 
-.navbarBurgerMenu {
-  font-size: large;
-  font-weight: bold;
-  padding-top: 1vh;
+@media only screen and (max-width: 300px) {
+  .BurgerMenu {
+    background-position: 10% 5%;
+  }
+  .navbarBurgerMenu {
+    position: relative;
+    top: 6vh;
+  }
 }
-
-.navLinkBurgerMenu {
-  text-decoration: none;
-  color: $color-yellow;
-}
-
-.navLinkBurgerMenu:hover {
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px brown,
-    0 100px 80px red;
-  color: brown;
-  font-size: 1.05em;
+@media only screen and (min-width: 301px) and (max-width: 500px){
+  .BurgerMenu {
+    background-position: 10% 5%;
+  }
+  .navbarBurgerMenu {
+    position: relative;
+    top: 6vh;
+  }
 }

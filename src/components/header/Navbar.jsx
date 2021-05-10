@@ -48,7 +48,7 @@ function displayAbout() {
   // ABOUT-BACKGROUND STYLE
   // document.getElementById('app-background').style.backgroundImage = 'none';
   // ABOUT-FOOTER STYLE
-  document.getElementById('iconsWrapper').style.display = 'none';
+  // document.getElementById('iconsWrapper').style.display = 'none';
 }
 
 function displayContact() {

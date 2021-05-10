@@ -2,6 +2,12 @@ html {
   background-color: black;
 }
 
+
+ul {
+  list-style: none;
+}
+
+
 .App {
   @import './variables';
   @import './home';
@@ -13,6 +19,7 @@ html {
   @import './projects';
   @import './contact';
   @import './burgerMenu';
+  @import './aboutNavbar';
 
   @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 

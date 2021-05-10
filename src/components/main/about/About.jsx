@@ -9,8 +9,8 @@ const About = () => {
   return (
     <div className='About'>
    
-
-      <AboutNavbar />
+   <AboutNavbar />
+   
       <Switch>
         <Route path='/skills'>
           <Skills />
@@ -19,9 +19,10 @@ const About = () => {
           <Curriculum />
         </Route>
       </Switch>
-      <div className='about-wrapper'>
+      
+      
    
-      </div>
+      
     </div>
   );
 };

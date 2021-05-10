@@ -2,22 +2,27 @@
   // height: 80vh;
   // border: 1px solid red;
   color: $color-white;
-  
 
-//   .navbarUlAbout {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-end;
-//     justify-items: flex-end;
-//     font-size: large;
-//     font-weight: bold;
-//     padding-top: 1vh;
-//   }
+  //   .navbarUlAbout {
+  //     display: flex;
+  //     flex-direction: row;
+  //     justify-content: flex-end;
+  //     justify-items: flex-end;
+  //     font-size: large;
+  //     font-weight: bold;
+  //     padding-top: 1vh;
+  //   }
   .about-wrapper {
     display: flex;
     align-content: flex-end;
     justify-content: center;
   }
 
- 
+  ul {
+    display: flex;
+  }
+  li {
+    margin-right: 5vw;
+  }
+
 }
