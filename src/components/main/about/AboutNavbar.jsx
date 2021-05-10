@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const AboutNavbar = () => {
   return (
-    <nav className='navBar-about'>
-      <ul className='navbarUlAbout'>
+    <nav className='navBarAbout'>
+      <ul className='ulAbout'>
         {/* <li onClick={displaySkills}> */}
         <li>
           <Link id='navSkills' className='navLink' to='/skills'>

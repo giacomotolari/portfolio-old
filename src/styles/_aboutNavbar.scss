@@ -1,0 +1,18 @@
+.navBarAbout {
+  .ulAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-items: flex-end;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 1vh;
+
+    li {
+      margin-right: 5vw;
+    }
+    .navLink {
+      color: $color-blue;
+    }
+  }
+}

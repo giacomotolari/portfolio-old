@@ -1,0 +1,119 @@
+.Contact {
+  padding-top: 8vh;
+  background-image: url('../asset/images/background-image.jpg');
+  background-repeat: no-repeat;
+  background-size: 35%;
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+
+    .personalData {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @media only screen and (max-width: 500px) {
+      .personalData {
+        flex-direction: column;
+      }
+    }
+
+    .name,
+    .mail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    label {
+      color: red;
+      font-size: calc(1em + 0.1vw);
+    }
+    h2 {
+      text-align: center;
+      color: $color-white;
+      font-size: calc(1em + 0.5vw);
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      align-items: center;
+      margin: 20px 0px;
+    }
+    .input {
+      padding: 12px;
+      margin: 15px;
+      width: 12vw;
+      height: 1vh;
+      border-radius: 7%;
+      border: 2px solid $color-yellow;
+      background-color: black;
+      color: white;
+    }
+
+    @media only screen and (min-width: 400px) and (max-width: 750px) {
+      .input {
+        width: 32vw;
+      }
+    }
+    @media only screen and (min-width: 201px) and (max-width: 399px) {
+      .input {
+        width: max-content;
+      }
+    }
+    @media only screen and (max-width: 200px) {
+      .input {
+        width: 72vw;
+      }
+    }
+    #msg {
+      width: 30%;
+      height: 20vh;
+      padding: 10px;
+      margin: 15px;
+      border: 2px solid $color-yellow;
+      background-color: black;
+      color: white;
+    }
+    @media only screen and (max-width: 700px) {
+      #msg {
+        width: 75vw;
+        height: 17vh;
+      }
+    }
+    #send {
+      padding: 10px;
+      width: 100px;
+      margin: 10px;
+      border-radius: 7%;
+      background-color: black;
+      color: red;
+      font-weight: bolder;
+      font-size: larger;
+      border: 2px solid $color-yellow;
+    }
+    #send:hover {
+      cursor: pointer;
+      box-shadow: 0 0 60px $color-yellow;
+      border: 3px solid $color-yellow;
+    }
+  }
+
+  footer {
+    text-align: center;
+
+    svg {
+      width: 1.5em;
+      height: 1.5em;
+      color: white;
+      margin-right: 1vw;
+    }
+    svg:hover {
+      color: brown;
+    }
+  }
+}

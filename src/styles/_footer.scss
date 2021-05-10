@@ -3,10 +3,7 @@
   display: flex;
   justify-content: flex-start;
   position: fixed;
-  margin-top: -6vh;
-  margin-left: 3vw;
-
-  // padding-left: 3vw;
+  bottom: 3vh;
 
   svg {
     margin-left: 2vw;
@@ -31,6 +28,12 @@
   svg:hover {
     width: 1.5em;
     height: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Footer {
+    // margin-top: -1vh;
   }
 }
 
@@ -59,7 +62,7 @@
 //   }
 
 //   .apparition2 {
-//     position: relative;
+//     position: relative;190v
 //     margin: 1px;
 //     font-family: sans-serif;
 //     text-transform: uppercase;
@@ -147,9 +150,3 @@
 //       transform: translateY(100%) scale(1) scaleY(1);
 //     }
 //   }
-
-@media only screen and (max-width: 500px) {
-  .Footer {
-    margin-top: -1vh;
-  }
-}

@@ -2,11 +2,14 @@ html {
   background-color: black;
 }
 
-
 ul {
   list-style: none;
 }
 
+body {
+  overflow: hidden; /* Hide scrollbars */
+  padding: 2vh 2vw 4vh 2vw;
+}
 
 .App {
   @import './variables';
@@ -25,10 +28,7 @@ ul {
 
   max-width: 100vw;
   max-height: 100vh;
-  // background-image: url('../asset/images/background-image.jpg');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: 40% 40%;
+  color: $color-white;
 
   .navLink {
     text-decoration: none;
@@ -41,18 +41,3 @@ ul {
     font-size: 1.05em;
   }
 }
-
-// #app-background {
-//   background-image: url('../asset/images/background-image.jpg');
-//   background-repeat: no-repeat;
-//   background-size: 70%;
-//   background-position: -35% 55%;
-// }
-
-// @media only screen and (max-width: 750px) {
-//   #app-background {
-//     background-repeat: no-repeat;
-//     background-size: 140%;
-//     background-position: 40% 70%;
-//   }
-// }
