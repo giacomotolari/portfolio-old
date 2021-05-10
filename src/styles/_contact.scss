@@ -34,7 +34,7 @@
     h2 {
       text-align: center;
       color: $color-white;
-      font-size: calc(1em + 0.5vw);
+      font-size: calc(1em + 0.3vw);
     }
 
     .form {
@@ -79,15 +79,21 @@
       background-color: black;
       color: white;
     }
-    @media only screen and (max-width: 700px) {
+    @media only screen and (min-width: 400px) and (max-width: 700px) {
       #msg {
         width: 75vw;
         height: 17vh;
       }
     }
+    @media only screen and (max-width: 400px) {
+      #msg {
+        width: 75vw;
+        height: 8vh;
+      }
+    }
     #send {
-      padding: 10px;
-      width: 100px;
+      padding: 8px;
+      width: 90px;
       margin: 10px;
       border-radius: 7%;
       background-color: black;
