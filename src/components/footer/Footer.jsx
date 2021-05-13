@@ -1,8 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
 import FooterNavbar from './FooterNavbar';
-
 
 const Footer = () => {
   return (
@@ -90,8 +88,6 @@ const Footer = () => {
       </div> */}
       </div>
       <FooterNavbar />
-
-     
     </div>
   );
 };
