@@ -9,7 +9,7 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './styles/app.scss';
-import Header from './components/header/Header.jsx';
+import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Main from './components/main/Main';
 

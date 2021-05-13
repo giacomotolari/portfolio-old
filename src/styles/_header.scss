@@ -21,37 +21,4 @@
 
 .Header {
   margin-top: -2.1vh;
-
-  #logo {
-    position: absolute;
-    left: 1.6%;
-    top: 0.6%;
-    width: 60px;
-    height: 45px;
-  }
-  #menu-icon {
-    display: none;
-    color: $color-yellow;
-    width: 46px;
-    height: 46px;
-  }
-  #menu-icon:hover {
-    color: $color-yellow;
-    border: $color-white 1px solid;
-  }
-
-  @media only screen and (max-width: 749px) {
-    #menu-icon {
-      display: block;
-      position: absolute;
-      right: 5vw;
-      top: 2vh;
-    }
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .Header {
-    margin-top: 0;
-  }
 }

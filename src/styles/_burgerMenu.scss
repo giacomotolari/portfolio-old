@@ -16,7 +16,7 @@
 
   li {
     margin-top: 7vh;
-    margin-right: 10vw;
+    margin-right: 12vw;
     list-style: none;
   }
   .navbarBurgerMenu {
@@ -42,18 +42,18 @@
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (min-width: 301px) and (max-width: 500px) {
   .BurgerMenu {
-    background-position: 10% 5%;
+    background-position: 10% 0%;
   }
   .navbarBurgerMenu {
     position: relative;
     top: 6vh;
   }
 }
-@media only screen and (min-width: 301px) and (max-width: 500px){
+@media only screen and (max-width: 300px) {
   .BurgerMenu {
-    background-position: 10% 5%;
+    background-position: 10% 0%;
   }
   .navbarBurgerMenu {
     position: relative;
