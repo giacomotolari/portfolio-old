@@ -1,0 +1,21 @@
+.navBarFooter {
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 0;
+    width: 68vw;
+
+    li {
+      margin: 0 2vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .navBarFooter {
+    display: none;
+  }
+}

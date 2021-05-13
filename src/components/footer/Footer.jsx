@@ -1,6 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-// import Images from '../../data/images.json';
+import { Switch, Route } from 'react-router-dom';
+import FooterNavbar from './FooterNavbar';
+
 
 const Footer = () => {
   return (
@@ -46,7 +48,6 @@ const Footer = () => {
 
         {/* Mail icon  */}
 
-
         {/* linkedin icon */}
         <a
           className='navLink'
@@ -88,6 +89,9 @@ const Footer = () => {
 
       </div> */}
       </div>
+      <FooterNavbar />
+
+     
     </div>
   );
 };

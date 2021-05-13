@@ -8,8 +8,6 @@
   text-decoration: none;
 }
 
-
-
 html {
   background-color: black;
 }
@@ -25,7 +23,6 @@ body {
 
 .App {
   @import './variables';
-  @import './home';
   @import './navbar';
   @import './header';
   @import './footer';
@@ -34,7 +31,7 @@ body {
   @import './projects';
   @import './contact';
   @import './burgerMenu';
-  @import './aboutNavbar';
+  @import './footerNavbar';
 
   @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 
@@ -43,7 +40,6 @@ body {
   color: $color-white;
 
   .navLink {
-    text-decoration: none;
     color: $color-yellow;
     margin: 5px;
   }

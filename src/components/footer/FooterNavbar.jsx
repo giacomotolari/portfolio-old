@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 
 
-const AboutNavbar = () => {
+const FooterNavbar = () => {
   return (
-    <nav className='navBarAbout'>
-      <ul className='ulAbout'>
+    <nav className='navBarFooter' id='navBarFooter'>
+      <ul>
         {/* <li onClick={displaySkills}> */}
         <li>
           <Link id='navSkills' className='navLink' to='/skills'>
@@ -17,8 +17,8 @@ const AboutNavbar = () => {
         </li>
         {/* <li onClick={displayCurriculum}> */}
         <li>
-          <Link id='navProjects' className='navLink' to='/curriculum'>
-            Curriculum
+          <Link id='navCurriculum' className='navLink' to='/curriculum'>
+            CV
           </Link>
         </li>
       </ul>
@@ -26,4 +26,4 @@ const AboutNavbar = () => {
   );
 };
 
-export default AboutNavbar;
+export default FooterNavbar;

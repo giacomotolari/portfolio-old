@@ -20,10 +20,6 @@
       0 100px 80px red;
   }
 
-  // #navHome {
-  //   color: red;
-  //   font-size: 200%;
-  // }
 
   @media only screen and (max-width: 750px) {
     .navbarUl {
@@ -35,19 +31,19 @@
   }
 }
 
-#burgerIcon {
+.burgerIcon {
   display: none;
   color: $color-yellow;
   width: 46px;
   height: 46px;
 }
-#burgerIcon:hover {
+.burgerIcon:hover {
   color: $color-yellow;
   border: $color-white 1px solid;
 }
 
 @media only screen and (max-width: 749px) {
-  #burgerIcon {
+  .burgerIcon {
     display: block;
     position: absolute;
     right: 5vw;
