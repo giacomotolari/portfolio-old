@@ -6,7 +6,11 @@ const Contact = () => {
     <div className='Contact'>
       <section className='contact'>
         <h2>Get in touch with me</h2>
-        <form action='' class='form'>
+        <form
+          className='form'
+          action='https://formsubmit.co/giacomotolari@gmail.com'
+          method='POST'
+        >
           <div className='personalData'>
             <div className='name'>
               <label htmlFor=''>FULL NAME</label>
