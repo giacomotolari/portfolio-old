@@ -45,8 +45,6 @@ function displayAbout() {
   document.getElementById('navContact').style.color = '#fdb827';
   document.getElementById('navContact').style['font-size'] = '100%';
   // ABOUT-BACKGROUND STYLE
-
-  // ABOUT-FOOTER STYLE
 }
 
 function displayContact() {
@@ -63,6 +61,12 @@ function displayContact() {
 
   // CONTACT-FOOTER STYLE
   document.getElementById('iconsWrapper').style.display = 'block';
+}
+
+function displayBurger() {
+  // FOOTER STYLE
+  document.getElementById('Footer').style.justifyContent = 'center';
+  document.getElementById('Footer').style.position = 'relative';
 }
 
 const Navbar = () => {
@@ -92,7 +96,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <Link className='burgerIcon' to='/burgermenu'>
+        <Link onClick={displayBurger} className='burgerIcon' to='/burgermenu'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='currentColor'

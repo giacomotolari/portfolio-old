@@ -4,7 +4,7 @@ import FooterNavbar from './FooterNavbar';
 
 const Footer = () => {
   return (
-    <div className='Footer'>
+    <div className='Footer' id="Footer">
       <div className='icons-wrapper' id='iconsWrapper'>
         {/* Github icon  */}
         <a

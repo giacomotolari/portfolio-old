@@ -7,16 +7,17 @@ import Contact from './contact/Contact';
 import BurgerMenu from './BurgerMenu';
 import Skills from './skills/Skills';
 import Curriculum from './curriculum/Curriculum';
+import Home from '../home/Home';
+
 
 const Main = () => {
   return (
     <div className='Main'>
+      <Home />
       {/* <p className='home-paragraph'>
         &lt;h2&gt;welcome to Giacomo's page &lt;/h2&gt;
       </p> */}
-
       {/* <CardGroup /> */}
-
       <Switch>
         <Route path='/projects'>
           <Projects />
@@ -39,6 +40,7 @@ const Main = () => {
           <Curriculum />
         </Route>
       </Switch>
+      
     </div>
   );
 };

@@ -1,4 +1,4 @@
-.Footer {
+#Footer {
   // border: solid 1px blue;
   display: flex;
   justify-content: flex-start;
@@ -32,11 +32,24 @@
   
 }
 
-@media only screen and (max-width: 500px) {
-  .Footer {
-    // margin-top: -1vh;
+.Footer {
+  animation: animate 2s linear;
+  animation-name: footerApparition;
+  animation-timing-function: ease-out;
+}
+
+@keyframes footerApparition {
+  0% {
+    transform: translate(0, -3000%);
+  }
+  50% {
+    transform: translate(0, -80%);
+  }
+  100% {
+    transform: translate(0, 0%);
   }
 }
+
 
 // .apparition-wrapper {
 //   display: flex;

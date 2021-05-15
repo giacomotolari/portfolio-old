@@ -2,6 +2,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+function displayHomeBurger() {
+  // FOOTER STYLE
+  document.getElementById('iconsWrapper').style.display = 'block';
+  document.getElementById('Footer').style.justifyContent = 'flex-start';
+  document.getElementById('Footer').style.position = 'fixed';
+}
+function displayProjectBurger() {
+  // FOOTER STYLE
+  document.getElementById('iconsWrapper').style.display = 'block';
+  document.getElementById('Footer').style.justifyContent = 'flex-start';
+  document.getElementById('Footer').style.position = 'fixed';
+}
+function displayAboutBurger() {
+  // FOOTER STYLE
+  document.getElementById('iconsWrapper').style.display = 'block';
+  document.getElementById('Footer').style.justifyContent = 'flex-start';
+  document.getElementById('Footer').style.position = 'fixed';
+}
 function displayContactBurger() {
   // NAVBAR-CONTACT STYLE
 
@@ -9,6 +27,20 @@ function displayContactBurger() {
 
   // CONTACT-FOOTER STYLE
   document.getElementById('iconsWrapper').style.display = 'none';
+  // FOOTER STYLE
+}
+function displayCurriculumBurger() {
+  // FOOTER STYLE
+  document.getElementById('iconsWrapper').style.display = 'block';
+  document.getElementById('Footer').style.justifyContent = 'flex-start';
+  document.getElementById('Footer').style.position = 'fixed';
+}
+
+function displaySkillsBurger() {
+  // FOOTER STYLE
+  document.getElementById('iconsWrapper').style.display = 'block';
+  document.getElementById('Footer').style.justifyContent = 'flex-start';
+  document.getElementById('Footer').style.position = 'fixed';
 }
 
 const BurgerMenu = () => {
@@ -16,17 +48,32 @@ const BurgerMenu = () => {
     <div className='BurgerMenu'>
       <ul className='navbarBurgerMenu'>
         <li>
-          <Link id='navHome' className='navLinkBurgerMenu' to='/home'>
+          <Link
+            onClick={displayHomeBurger}
+            id='navHome'
+            className='navLinkBurgerMenu'
+            to='/home'
+          >
             HOME
           </Link>
         </li>
         <li>
-          <Link id='navProjects' className='navLinkBurgerMenu' to='/projects'>
+          <Link
+            onClick={displayProjectBurger}
+            id='navProjects'
+            className='navLinkBurgerMenu'
+            to='/projects'
+          >
             PROJECTS
           </Link>
         </li>
         <li>
-          <Link id='navAbout' className='navLinkBurgerMenu' to='/about'>
+          <Link
+            onClick={displayAboutBurger}
+            id='navAbout'
+            className='navLinkBurgerMenu'
+            to='/about'
+          >
             ABOUT
           </Link>
         </li>
@@ -41,12 +88,18 @@ const BurgerMenu = () => {
           </Link>
         </li>
         <li>
-          <Link id='navSkills' className='navLinkBurgerMenu' to='/skills'>
+          <Link
+            onClick={displaySkillsBurger}
+            id='navSkills'
+            className='navLinkBurgerMenu'
+            to='/skills'
+          >
             SKILLS
           </Link>
         </li>
         <li>
           <Link
+            onClick={displayCurriculumBurger}
             id='navCurriculum'
             className='navLinkBurgerMenu'
             to='/curriculum'

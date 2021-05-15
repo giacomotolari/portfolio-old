@@ -1,0 +1,102 @@
+.Home {
+  // border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+
+  .sectionText {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    // border: 1px solid yellow;
+
+    .home-text {
+      display: flex;
+      flex-direction: column;
+      margin-left: 3vw;
+      animation: animate 4s linear;
+      animation-name: homeTextApparition;
+      animation-timing-function: ease infinite;
+    }
+
+    @keyframes homeTextApparition {
+      0% {
+        transform: translateX(-3000%);
+      }
+      50% {
+        opacity: 0.2;
+        transform: translateX(-80%);
+      }
+      100% {
+        opacity: 0.5;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .sectionFoto {
+    // border: 1px solid blue;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+  
+    .profilefoto {
+      width: 50%;
+      height: 100%;
+      background-image: url('../asset/images/giacomo.png');
+      background-repeat: no-repeat;
+      background-size: 80%;
+      background-position-y: 50%;
+      background-position-x: 70%;
+      animation: animate 4.5s linear;
+      animation-name: profileFotoApparition;
+      animation-timing-function: ease;
+    }
+
+    @keyframes profileFotoApparition {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      75% {
+        opacity: 0.3;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  h1 {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    font-size: calc(0.5em + 3vw);
+    opacity: 0;
+    animation: animate 2s linear;
+    animation-name: h1Apparition;
+    animation-timing-function: ease;
+  }
+
+  @keyframes h1Apparition {
+    0% {
+      opacity: 1;
+      transform: translateY(80%) scale(2);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(75%) scale(1.5);
+    }
+
+    100% {
+      transform: translateY(0%) scale(0);
+    }
+  }
+}

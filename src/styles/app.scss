@@ -18,8 +18,10 @@ ul {
 
 body {
   overflow: hidden; /* Hide scrollbars */
-  padding: 2vh 2vw 4vh 2vw;
+  padding: 1rem;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
+
 
 .App {
   @import './variables';
@@ -32,6 +34,7 @@ body {
   @import './contact';
   @import './burgerMenu';
   @import './footerNavbar';
+  @import './home';
 
   @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 

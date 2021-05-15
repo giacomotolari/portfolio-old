@@ -4,7 +4,11 @@
     flex-direction: row;
     justify-content: flex-end;
     font-size: large;
-    font-weight: bold;
+    font-weight: bold; 
+
+    animation: animate 1.5s linear;
+    animation-name: navbarApparition;
+    animation-timing-function: ease;
   }
 
   .navLink {
@@ -48,5 +52,19 @@
     position: absolute;
     right: 5vw;
     top: 2vh;
+  }
+}
+
+
+
+@keyframes navbarApparition {
+  0% {
+    transform: translateX(-3000%);
+  }
+  50% {
+    transform: translateX(-80%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
