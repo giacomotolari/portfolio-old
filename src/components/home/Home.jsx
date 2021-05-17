@@ -1,4 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
+
 import React from 'react';
 
 const Home = () => {
@@ -6,9 +7,17 @@ const Home = () => {
     <div className='Home'>
       <section className='sectionText'>
         <div class='home-text'>
-          <h3>WEB DEVELOPER</h3>
-          <h3>GIACOMO TOLARI</h3>
+          <p>
+            Hello everyone! <br />
+            <br />
+            <br /> I am Giacomo a student of DCI and I want to become a good Web
+            Developer. <br />
+            In this page I will introduce myself, my skills and my projects.
+          </p>
         </div>
+
+        {/* <h3>WEB DEVELOPER</h3>
+          <h3>GIACOMO TOLARI</h3> */}
       </section>
 
       <section className='sectionFoto'>
@@ -19,4 +28,5 @@ const Home = () => {
     </div>
   );
 };
+
 export default Home;

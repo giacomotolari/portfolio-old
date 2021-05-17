@@ -13,7 +13,7 @@ import Home from '../home/Home';
 const Main = () => {
   return (
     <div className='Main'>
-      <Home />
+      
       {/* <p className='home-paragraph'>
         &lt;h2&gt;welcome to Giacomo's page &lt;/h2&gt;
       </p> */}
@@ -38,6 +38,9 @@ const Main = () => {
         </Route>
         <Route path='/curriculum'>
           <Curriculum />
+        </Route>
+        <Route exact path='/'>
+        <Home />
         </Route>
       </Switch>
       

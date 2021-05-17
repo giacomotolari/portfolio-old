@@ -52,7 +52,7 @@ const BurgerMenu = () => {
             onClick={displayHomeBurger}
             id='navHome'
             className='navLinkBurgerMenu'
-            to='/home'
+            to='/'
           >
             HOME
           </Link>

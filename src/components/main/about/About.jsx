@@ -7,14 +7,10 @@ const About = () => {
     <div className='About'>
       
       <div class='about-text'>
-          <p>
-            Hello everyone! <br />
-            <br />
-            <br /> I am Giacomo a student of DCI and I want to become a good Web
-            Developer. <br />
-            
-            In this page I will introduce myself, my skills and my projects.
-          </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facilis nulla obcaecati voluptates quisquam dolorum alias saepe incidunt natus cum commodi blanditiis, quo, suscipit modi sapiente ipsam illo odio unde.
+    Deserunt, facere, possimus cum vitae quidem nobis quas repudiandae soluta porro odit vel cumque iste debitis veritatis mollitia itaque voluptates iure ab nam vero laudantium quam consequuntur dicta? Sapiente, aperiam?
+    Nobis rem asperiores ad quasi, quis nostrum reprehenderit iure adipisci natus esse fuga, placeat magnam officia consequatur labore totam, corrupti facilis excepturi tempora delectus. Nulla voluptatem magni temporibus dolores quasi!
+    c!</p>
         </div>
         
      
