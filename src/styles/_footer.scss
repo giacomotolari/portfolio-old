@@ -7,25 +7,18 @@
 
   svg {
     margin-left: 2vw;
-    width: calc(2vw + 0.5em);
-    height: calc(2vh + 0.5em);
-    // width: calc(1em + 0.8vw);
-    // height: calc(1em + 0.8vh);
+    width: calc(1em + 0.4vw);
+    height: calc(1em + 0.4vh);
   }
 
-  // @media only screen and (max-width: 350px) {
-  //   svg {
-  //     width: 24px;
-  //     height: 24px;
-  //   }
-  // }
+  @media only screen and (max-width: 500px) {
+    svg {
+      width: calc(3vw + 0.6em);
+      height: calc(3vh + 0.6em);
+    }
+  }
 
-  // @media only screen and (max-width: 250px) {
-  //   svg {
-  //     width: 22px;
-  //     height: 22px;
-  //   }
-  // }
+  
 
   svg:hover {
     width: 1.5em;

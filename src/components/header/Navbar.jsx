@@ -13,6 +13,10 @@ function displayHome() {
   document.getElementById('navAbout').style['font-size'] = '100%';
   document.getElementById('navContact').style.color = '#fdb827';
   document.getElementById('navContact').style['font-size'] = '100%';
+  document.getElementById('navCurriculum').style.color = '#fdb827';
+  document.getElementById('navCurriculum').style['font-size'] = '100%';
+  document.getElementById('navSkills').style.color = '#fdb827';
+  document.getElementById('navSkills').style['font-size'] = '100%';
   // HOME-BACKGROUND STYLE
 
   // HOME-FOOTER STYLE
@@ -28,6 +32,10 @@ function displayProjects() {
   document.getElementById('navAbout').style['font-size'] = '100%';
   document.getElementById('navContact').style.color = '#fdb827';
   document.getElementById('navContact').style['font-size'] = '100%';
+  document.getElementById('navSkills').style.color = '#fdb827';
+  document.getElementById('navSkills').style['font-size'] = '100%';
+  document.getElementById('navCurriculum').style.color = '#fdb827';
+  document.getElementById('navCurriculum').style['font-size'] = '100%';
   // PROJECTS-BACKGROUND STYLE
 
   // PROJECT-FOOTER STYLE
@@ -44,6 +52,10 @@ function displayAbout() {
   document.getElementById('navAbout').style['font-size'] = '200%';
   document.getElementById('navContact').style.color = '#fdb827';
   document.getElementById('navContact').style['font-size'] = '100%';
+  document.getElementById('navCurriculum').style.color = '#fdb827';
+  document.getElementById('navCurriculum').style['font-size'] = '100%';
+  document.getElementById('navSkills').style.color = '#fdb827';
+  document.getElementById('navSkills').style['font-size'] = '100%';
   // ABOUT-BACKGROUND STYLE
 }
 
@@ -57,6 +69,10 @@ function displayContact() {
   document.getElementById('navAbout').style['font-size'] = '100%';
   document.getElementById('navContact').style.color = 'red';
   document.getElementById('navContact').style['font-size'] = '200%';
+  document.getElementById('navCurriculum').style.color = '#fdb827';
+  document.getElementById('navCurriculum').style['font-size'] = '100%';
+  document.getElementById('navSkills').style.color = '#fdb827';
+  document.getElementById('navSkills').style['font-size'] = '100%';
   // CONTACT-BACKGROUND STYLE
 
   // CONTACT-FOOTER STYLE
@@ -65,7 +81,7 @@ function displayContact() {
 
 function displayBurger() {
   // FOOTER STYLE
-  document.getElementById('Footer').style.justifyContent = 'center';
+  document.getElementById('Footer').style.display = 'none';
   document.getElementById('Footer').style.position = 'relative';
 }
 

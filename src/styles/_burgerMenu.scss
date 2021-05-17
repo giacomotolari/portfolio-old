@@ -2,29 +2,25 @@
   // border: 1px solid red;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   font-size: large;
   font-weight: bold;
-  height: 70vh;
+  height: 80vh;
   max-width: 100vw;
-  margin-top: 5vh;
   background-image: url('../asset/images/background-image.jpg');
-  background-position: 100% -20%;
+  background-position: 110% 5%;
   background-size: 80%;
   background-repeat: no-repeat;
 
   li {
     margin-top: 5vh;
     margin-right: 12vw;
-    list-style: none;
   }
   .navbarBurgerMenu {
     font-size: large;
     font-weight: bold;
     padding-top: 1vh;
-    position: relative;
-    top: 8vh;
   }
 
   .navLinkBurgerMenu {
@@ -43,19 +39,11 @@
 
 @media only screen and (min-width: 301px) and (max-width: 500px) {
   .BurgerMenu {
-    background-position: 10% 0%;
-  }
-  .navbarBurgerMenu {
-    position: relative;
-    top: 6vh;
+    background-position: 110% 15%;
   }
 }
 @media only screen and (max-width: 300px) {
   .BurgerMenu {
-    background-position: 10% 0%;
-  }
-  .navbarBurgerMenu {
-    position: relative;
-    top: 6vh;
+    background-position: 110% 25%;
   }
 }

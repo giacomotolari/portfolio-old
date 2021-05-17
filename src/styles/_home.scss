@@ -62,7 +62,7 @@
       background-image: url('../asset/images/IMG_1836.png');
       background-repeat: no-repeat;
       background-size: 120%;
-      background-position-y: 10%;
+      background-position-y: -10%;
       background-position-x: 50%;
       animation: animate 3.8s linear;
       animation-name: profileFotoApparition;
@@ -71,6 +71,8 @@
     @media only screen and (max-width: 500px) {
       .profilefoto {
         width: 70%;
+        position: relative;
+        bottom: 10%;
       }
     }
 

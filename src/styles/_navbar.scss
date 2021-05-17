@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: flex-end;
     font-size: large;
-    font-weight: bold; 
+    font-weight: bold;
 
     animation: animate 1.5s linear;
     animation-name: navbarApparition;
@@ -24,6 +24,10 @@
       0 100px 80px red;
   }
 
+  #navHome {
+    color: red;
+    font-size: 200%;
+  }
 
   @media only screen and (max-width: 750px) {
     .navbarUl {
@@ -54,8 +58,6 @@
     top: 2vh;
   }
 }
-
-
 
 @keyframes navbarApparition {
   0% {

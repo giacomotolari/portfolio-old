@@ -7,18 +7,24 @@ function displayHomeBurger() {
   document.getElementById('iconsWrapper').style.display = 'block';
   document.getElementById('Footer').style.justifyContent = 'flex-start';
   document.getElementById('Footer').style.position = 'fixed';
+  document.getElementById('Footer').style.display = 'block';
+
 }
 function displayProjectBurger() {
   // FOOTER STYLE
   document.getElementById('iconsWrapper').style.display = 'block';
   document.getElementById('Footer').style.justifyContent = 'flex-start';
   document.getElementById('Footer').style.position = 'fixed';
+  document.getElementById('Footer').style.display = 'block';
+
 }
 function displayAboutBurger() {
   // FOOTER STYLE
   document.getElementById('iconsWrapper').style.display = 'block';
   document.getElementById('Footer').style.justifyContent = 'flex-start';
   document.getElementById('Footer').style.position = 'fixed';
+  document.getElementById('Footer').style.display = 'block';
+
 }
 function displayContactBurger() {
   // NAVBAR-CONTACT STYLE
@@ -28,12 +34,16 @@ function displayContactBurger() {
   // CONTACT-FOOTER STYLE
   document.getElementById('iconsWrapper').style.display = 'none';
   // FOOTER STYLE
+  document.getElementById('Footer').style.display = 'block';
+
 }
 function displayCurriculumBurger() {
   // FOOTER STYLE
   document.getElementById('iconsWrapper').style.display = 'block';
   document.getElementById('Footer').style.justifyContent = 'flex-start';
   document.getElementById('Footer').style.position = 'fixed';
+  document.getElementById('Footer').style.display = 'block';
+
 }
 
 function displaySkillsBurger() {
@@ -41,6 +51,7 @@ function displaySkillsBurger() {
   document.getElementById('iconsWrapper').style.display = 'block';
   document.getElementById('Footer').style.justifyContent = 'flex-start';
   document.getElementById('Footer').style.position = 'fixed';
+  document.getElementById('Footer').style.display = 'block';
 }
 
 const BurgerMenu = () => {

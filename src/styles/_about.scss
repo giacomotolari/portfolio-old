@@ -1,5 +1,45 @@
 .About {
-  border: 1px solid red;
+  // border: 1px solid red;
   color: $color-white;
   height: 80vh;
+
+  .about-text {
+    height: 40%;
+    padding: 2vw;
+    animation: animate 1.2s linear;
+    animation-name: homeTextApparition;
+    animation-timing-function: ease;
+  }
+  @media only screen and (max-width: 749px) {
+    .about-text {
+      position: relative;
+      top: 15%;
+    }
+  }
+
+  .spaceApparitionAbout {
+    position: absolute;
+    z-index: -1;
+    width: 5px;
+    height: 5px;
+    opacity: 0;
+    background-image: url('../asset/images/giphy\ \(2\).gif');
+    background-size: cover;
+    animation: animate 1s linear;
+    animation-name: spaceApparitionAbout;
+    animation-timing-function: ease;
+  }
+
+  @keyframes spaceApparitionAbout {
+    0% {
+      opacity: 0.5;
+    }
+    70% {
+      transform: translateY(50%) scale(1000);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 }
