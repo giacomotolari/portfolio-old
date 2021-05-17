@@ -19,7 +19,7 @@ const Home = () => {
         {/* <h3>WEB DEVELOPER</h3>
           <h3>GIACOMO TOLARI</h3> */}
       </section>
-
+      
       <section className='sectionFoto'>
         <h1>GIACOMO TOLARI</h1>
 
