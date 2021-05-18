@@ -26,10 +26,6 @@
       0% {
         transform: translateX(-3000%);
       }
-      // 50% {
-      //   opacity: 0.2;
-      //   transform: translateX(-80%);
-      // }
       100% {
         opacity: 0.5;
         transform: translateX(0);
@@ -62,7 +58,7 @@
       background-image: url('../asset/images/IMG_1836.png');
       background-repeat: no-repeat;
       background-size: 120%;
-      background-position-y: -10%;
+      background-position-y: 50%;
       background-position-x: 50%;
       animation: animate 3.8s linear;
       animation-name: profileFotoApparition;
@@ -73,6 +69,7 @@
         width: 70%;
         position: relative;
         bottom: 10%;
+        background-position-y: 10%;
       }
     }
 

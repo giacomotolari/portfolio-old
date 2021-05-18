@@ -115,7 +115,7 @@ const BurgerMenu = () => {
             className='navLinkBurgerMenu'
             to='/curriculum'
           >
-            CV
+            CURRICULUM
           </Link>
         </li>
       </ul>

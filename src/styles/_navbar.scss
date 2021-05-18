@@ -42,8 +42,10 @@
 .burgerIcon {
   display: none;
   color: $color-yellow;
-  width: 46px;
-  height: 46px;
+  width: calc(2em + 2vw);
+  height: calc(2em + 2vh);
+  // width: 46px;
+  // height: 46px;
 }
 .burgerIcon:hover {
   color: $color-yellow;
