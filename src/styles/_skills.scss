@@ -1,6 +1,85 @@
 .Skills {
+  // border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  background-image: url('../asset/images/brain2.gif');
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+
   .skillsLogos {
+    // border: 1px solid green;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+
     .skillsLogo {
+      // border: 1px solid yellow;
+      width: 35%;
+      height: 25%;
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      margin: 5vw;
+      background-repeat: no-repeat;
+      animation: animate 6s linear;
+      animation-name: logosApparition;
+      animation-timing-function: ease;
     }
+
+    @keyframes logosApparition {
+      0% {
+        opacity: 0;
+        
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+      100% {
+        left: 50%;
+        top: 45%;
+        transform: translateY scale(0.1);
+      }
+    }
+  }
+  .gitHubLogo {
+    background-image: url('../asset/images/logos/github.png');
+    background-size: 22%;
+    left: 50%;
+  }
+  .bootstrapLogo {
+    background-image: url('../asset/images/logos/bootstrap.png');
+    background-size: 70%;
+  }
+  .sassLogo {
+    background-image: url('../asset/images/logos/sass.png');
+    background-size: 30%;
+    left: 40%;
+    top: 80%;
+  }
+  .reactLogo {
+    background-image: url('../asset/images/logos/react.png');
+    background-size: 25%;
+    left: 20%;
+    top: 80%;
+  }
+  .javaScriptLogo {
+    background-image: url('../asset/images/logos/js.png');
+    background-size: 22%;
+    left: 60%;
+    top: 80%;
+  }
+  .htmlLogo {
+    background-image: url('../asset/images/logos/html.png');
+    background-size: 22%;
+    left: 0%;
+    top: 60%;
+  }
+  .cssLogo {
+    background-image: url('../asset/images/logos/css.png');
+    background-size: 22%;
+    left: 0%;
+    top: 20%;
   }
 }
