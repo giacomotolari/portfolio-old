@@ -2,7 +2,7 @@
   // border: solid 1px blue;
   display: flex;
   justify-content: flex-start;
-  position: fixed;
+  position: sticky;
   bottom: 3vh;
 
   svg {
@@ -28,18 +28,16 @@
 }
 
 .Footer {
-  animation: animate 2s linear;
+  animation: animate 3s linear;
   animation-name: footerApparition;
   animation-timing-function: ease-out;
 }
 
 @keyframes footerApparition {
   0% {
-    transform: translate(0, -3000%);
+    transform: translate(0, 1000%);
   }
-  50% {
-    transform: translate(0, -80%);
-  }
+
   100% {
     transform: translate(0, 0%);
   }

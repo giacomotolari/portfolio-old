@@ -73,7 +73,12 @@
         background-position-y: 10%;
       }
     }
-
+    @media only screen and (min-width: 1000px) {
+      .profilefoto {
+        background-position-y: 30%;
+      }
+    }
+    
     @keyframes profileFotoApparition {
       0% {
         transform: scale(0);

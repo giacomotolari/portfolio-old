@@ -15,202 +15,267 @@
     left: 45%;
     top: 40%;
     z-index: -1;
-    opacity: 0;
+    opacity: 1;
     background-repeat: no-repeat;
   }
 
   .gitHubLogo {
     background-image: url('../asset/images/logos/github.png');
     background-size: 22%;
-    animation: animate 5s linear;
+    animation: animate 30s linear infinite;
     animation-name: gitHubApparition;
     animation-timing-function: ease;
   }
 
   @keyframes gitHubApparition {
     0% {
-      z-index: 1;
-      opacity: 0.5;
-      transform: scale(0.5);
     }
-    25% {
-      transform: translate3d(
-          (random(10) * 30px),
-          (random(10) * -20px),
-          (random(10) * 20px)
-        )
-        scale(random(3));
-    }
+
     100% {
-      z-index: 1;
-      opacity: 0.6;
-      transform: translateX(-250%) translateY(-250%) scale(0.5);
+      opacity: 0;
+      transform: translateX((random(10) * -150px))
+        translateY((random(10) * 50px)) scale(random(2))
+        rotate((random(540) * 1deg));
     }
   }
   .bootstrapLogo {
     background-image: url('../asset/images/logos/bootstrap.png');
     background-size: 70%;
-    animation: animate 5s linear;
+    animation: animate 30s linear infinite;
     animation-name: bootstrapApparition;
     animation-timing-function: ease;
   }
   @keyframes bootstrapApparition {
     0% {
-      z-index: 1;
-      opacity: 0.5;
-      transform: scale(0.5);
+      // transform: translate3d(
+      //     (random(10) * 1px),
+      //     (random(10) * -1px),
+      //     (random(10) * 1px)
+      //   )
+      //   scale(random(2)) rotate((random(540) * 1deg));
     }
-    25% {
-      transform: translate3d(
-          (random(10) * 30px),
-          (random(10) * -20px),
-          (random(10) * 20px)
-        )
-        scale(random(3));
-    }
+
     100% {
-      z-index: 1;
-      opacity: 0.6;
-      transform: translateX(-250%) translateY(150%) scale(0.5);
+      opacity: 0;
+      transform: translateX((random(10) * -10px))
+        translateY((random(10) * -50px)) scale(random(2))
+        rotate((random(540) * 1deg));
     }
   }
   .sassLogo {
     background-image: url('../asset/images/logos/sass.png');
     background-size: 30%;
-    animation: animate 5s linear;
+    animation: animate 30s linear infinite;
     animation-name: sassApparition;
     animation-timing-function: ease;
   }
   @keyframes sassApparition {
     0% {
-      z-index: 1;
-      opacity: 0.5;
-      transform: scale(0.5);
-    }
-    25% {
       transform: translate3d(
-          (random(10) * 30px),
-          (random(10) * -20px),
-          (random(10) * 20px)
+          (random(10) * 1px),
+          (random(10) * -1px),
+          (random(10) * 1px)
         )
-        scale(random(3));
+        scale(random(2)) rotate((random(540) * 1deg));
     }
+
     100% {
-      z-index: 1;
-      opacity: 0.6;
-      transform: translateX(250%) translateY(-250%) scale(0.5);
+      opacity: 0;
+      transform: translateX((random(10) * -10px))
+        translateY((random(10) * -70px)) scale(random(2))
+        rotate((random(540) * 1deg));
     }
   }
 
   .reactLogo {
     background-image: url('../asset/images/logos/react.png');
     background-size: 25%;
-    animation: animate 5s linear;
+    animation: animate 30s linear infinite;
     animation-name: reactApparition;
     animation-timing-function: ease;
   }
   @keyframes reactApparition {
     0% {
-      z-index: 1;
-      opacity: 0.5;
-      transform: scale(0.5);
+      transform: translate3d(
+          (random(10) * 2px),
+          (random(10) * -2px),
+          (random(10) * 2px)
+        )
+        scale(random(2)) rotate((random(540) * 1deg));
     }
-    25% {
+
+    100% {
+      opacity: 0;
       transform: translate3d(
           (random(10) * 30px),
           (random(10) * -20px),
           (random(10) * 20px)
         )
-        scale(random(3));
-    }
-    100% {
-      z-index: 1;
-      opacity: 0.6;
-      transform: translateX(50%) translateY(-250%) scale(0.5);
+        scale(random(2)) rotate((random(540) * 1deg));
     }
   }
   .javaScriptLogo {
     background-image: url('../asset/images/logos/js.png');
     background-size: 22%;
-    animation: animate 5s linear;
+    animation: animate 34s linear infinite;
     animation-name: jsApparition;
     animation-timing-function: ease;
   }
   @keyframes jsApparition {
     0% {
-      z-index: 1;
-      opacity: 0.5;
-      transform: scale(0.5);
+      transform: translate3d(
+          (random(10) * 3px),
+          (random(10) * -1px),
+          (random(10) * 3px)
+        )
+        scale(random(2)) rotate((random(540) * 1deg));
     }
-    25% {
+
+    100% {
+      opacity: 0;
       transform: translate3d(
           (random(10) * 30px),
           (random(10) * -20px),
           (random(10) * 20px)
         )
-        scale(random(3));
-    }
-    100% {
-      z-index: 1;
-      opacity: 0.6;
-      transform: translateX(250%) translateY(0%) scale(0.5);
+        scale(random(2)) rotate((random(540) * 1deg));
     }
   }
   .htmlLogo {
     background-image: url('../asset/images/logos/html.png');
     background-size: 22%;
-    animation: animate 5s linear;
+    animation: animate 33s linear infinite;
     animation-name: htmlApparition;
     animation-timing-function: ease;
   }
   @keyframes htmlApparition {
     0% {
-      z-index: 1;
-      opacity: 0.5;
-      transform: scale(0.5);
     }
-    25% {
+
+    100% {
+      opacity: 0;
       transform: translate3d(
           (random(10) * 30px),
           (random(10) * -20px),
           (random(10) * 20px)
         )
-        scale(random(3));
-    }
-    100% {
-      z-index: 1;
-      opacity: 0.6;
-      transform: translateX(50%) translateY(350%) scale(0.5);
+        scale(random(2)) rotate((random(540) * 1deg));
     }
   }
   .cssLogo {
-    background-image: url('../asset/images/logos/css.png');
+    background-image: url('../asset/images/logos/icons8-css3-48.png');
     background-size: 22%;
-    animation: animate 5s linear;
-    animation-name: csslApparition;
+    animation: animate 29s linear infinite;
+    animation-name: cssApparition;
     animation-timing-function: ease;
   }
   @keyframes cssApparition {
     0% {
-      z-index: 1;
-      opacity: 0.5;
-      transform: scale(0.5);
+      transform: translate3d(
+          (random(10) * 3px),
+          (random(10) * -5px),
+          (random(10) * 1px)
+        )
+        scale(random(2)) rotate((random(540) * 1deg));
     }
-    25% {
+
+    100% {
+      opacity: 0;
+      transform: translate3d(
+          (random(10) * 20px),
+          (random(10) * -10px),
+          (random(10) * 20px)
+        )
+        scale(random(2)) rotate((random(540) * 1deg));
+    }
+  }
+  .linuxLogo {
+    background-image: url('../asset/images/logos/icons8-linux-48.png');
+    background-size: 22%;
+    animation: animate 28s linear infinite;
+    animation-name: linuxApparition;
+    animation-timing-function: ease;
+  }
+  @keyframes linuxApparition {
+    0% {
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateX((random(10) * -110px))
+        translateY((random(10) * -10px)) scale(random(2))
+        rotate((random(540) * 1deg));
+    }
+  }
+
+  .windowsLogo {
+    background-image: url('../asset/images/logos/icons8-windows-xp-48.png');
+    background-size: 22%;
+    animation: animate 27s linear infinite;
+    animation-name: windowsApparition;
+    animation-timing-function: ease;
+  }
+  @keyframes windowsApparition {
+    0% {
+      transform: translate3d(
+          (random(10) * 1px),
+          (random(10) * -4px),
+          (random(10) * 1px)
+        )
+        scale(random(2)) rotate((random(540) * 1deg));
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateX((random(10) * -120px))
+        translateY((random(10) * -5px)) scale(random(2))
+        rotate((random(540) * 1deg));
+    }
+  }
+  .vsLogo {
+    background-image: url('../asset/images/logos/icons8-visual-studio-code-2019-48.png');
+    background-size: 22%;
+    animation: animate 9s linear infinite;
+    animation-name: vsApparition;
+    animation-timing-function: ease;
+  }
+  @keyframes vsApparition {
+    0% {
+    }
+
+    100% {
+      opacity: 0;
       transform: translate3d(
           (random(10) * 30px),
           (random(10) * -20px),
           (random(10) * 20px)
         )
-        scale(random(3));
-    }
-    100% {
-      z-index: 1;
-      opacity: 0.6;
-      transform: translateX(80%) translateY(-250%) scale(0.5);
+        scale(random(2)) rotate((random(540) * 1deg));
     }
   }
+  .gimpfLogo {
+    background-image: url('../asset/images/logos/icons8-gimp-48.png');
+    background-size: 22%;
+    animation: animate 29s linear infinite;
+    animation-name: gimpfApparition;
+    animation-timing-function: ease;
+  }
+  @keyframes gimpfApparition {
+    0% {
+      transform: translate3d(
+          (random(10) * 1px),
+          (random(10) * -2px),
+          (random(10) * 1px)
+        )
+        scale(random(2)) rotate((random(540) * 1deg));
+    }
 
+    100% {
+      opacity: 0;
+      transform: translateX((random(10) * -85px)) translateY((random(10) * 5px))
+        scale(random(2)) rotate((random(540) * 1deg));
+    }
+  }
   .brain {
     background-image: url('../asset/images/brain2.gif');
     background-position: center;
@@ -221,9 +286,9 @@
     position: absolute;
     left: 13%;
     top: 17%;
-    z-index: -1;
+    z-index: -2;
     opacity: 0;
-    animation: animate 10s linear;
+    animation: animate 14s linear;
     animation-name: brainApparition;
     animation-timing-function: ease;
   }
@@ -236,6 +301,31 @@
 
     100% {
       transform: scale(0);
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .brain {
+      background-size: 155%;
+    }
+  }
+  .skillsLists {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15vh 7vw 0 0;
+    animation: animate 9s linear;
+    animation-name: homeTextApparition;
+    animation-timing-function: ease;
+
+    h4 {
+      color: $color-red;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .skillsLists {
+      flex-direction: column;
+      margin: 4vh 7vw;
     }
   }
 }
