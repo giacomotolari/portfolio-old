@@ -1,21 +1,16 @@
 .Skills {
-  // border: 1px solid red;
   max-width: 100%;
   max-height: 100%;
-  // background-image: url('../asset/images/brain2.gif');
-  // background-position: center;
-  // background-size: 70%;
-  // background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
 
   .skillsLogo {
     // border: 1px solid yellow;
     width: 22vw;
     height: 22vh;
     position: absolute;
-    left: 45%;
-    top: 40%;
     z-index: -1;
-    opacity: 1;
+    opacity: 0;
     background-repeat: no-repeat;
     background-size: 30%;
   }
@@ -28,243 +23,264 @@
   }
   .gitHubLogo {
     background-image: url('../asset/images/logos/github.png');
-    animation: animate 30s linear infinite;
+    background-size: 20%;
+    top: 80%;
+    left: 20%;
+    animation: animate 24s linear infinite;
+    animation-delay: 6s;
     animation-name: gitHubApparition;
     animation-timing-function: ease;
   }
-
+  @media only screen and (max-width: 500px) {
+    .gitHubLogo {
+      background-size: 80%;
+    }
+  }
   @keyframes gitHubApparition {
     0% {
+      opacity: 1;
     }
 
     100% {
-      opacity: 0;
-      transform: translateX((random(10) * -150px))
-        translateY((random(10) * 50px)) scale(random(2))
-        rotate((random(540) * 1deg));
+      transform: translate((random(10) * 10%), (random(10) * -80%));
     }
   }
   .bootstrapLogo {
     background-image: url('../asset/images/logos/bootstrap.png');
-    animation: animate 30s linear infinite;
+    background-size: 50%;
+    top: 80%;
+    left: 65%;
+    animation: animate 26s linear infinite;
+    animation-delay: 7.5s;
     animation-name: bootstrapApparition;
     animation-timing-function: ease;
   }
   @keyframes bootstrapApparition {
     0% {
+      opacity: 1;
     }
 
     100% {
-      opacity: 0;
-      transform: translateX((random(10) * -10px))
-        translateY((random(10) * -50px)) scale(random(2))
-        rotate((random(540) * 1deg));
+      transform: translate((random(10) * 10%), (random(10) * -95%));
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .bootstrapLogo {
+      background-size: 160%;
     }
   }
   .sassLogo {
     background-image: url('../asset/images/logos/sass.png');
-    animation: animate 30s linear infinite;
+    background-size: 25%;
+    top: 82%;
+    left: 53%;
+    animation: animate 25s linear infinite;
+    animation-delay: 5.5s;
     animation-name: sassApparition;
     animation-timing-function: ease;
   }
   @keyframes sassApparition {
     0% {
-      transform: translate3d(
-          (random(10) * 1px),
-          (random(10) * -1px),
-          (random(10) * 1px)
-        )
-        scale(random(2)) rotate((random(540) * 1deg));
+      opacity: 1;
     }
 
     100% {
-      opacity: 0;
-      transform: translateX((random(10) * -10px))
-        translateY((random(10) * -70px)) scale(random(2))
-        rotate((random(540) * 1deg));
+      transform: translate((random(10) * -10%), (random(10) * -75%));
     }
   }
-
+  @media only screen and (max-width: 500px) {
+    .sassLogo {
+      background-size: 80%;
+    }
+  }
   .reactLogo {
     background-image: url('../asset/images/logos/react.png');
-    animation: animate 30s linear infinite;
+    background-size: 25%;
+    top: 68%;
+    left: 51%;
+    animation: animate 25s linear infinite;
+    animation-delay: 4.7s;
     animation-name: reactApparition;
     animation-timing-function: ease;
   }
   @keyframes reactApparition {
     0% {
-      transform: translate3d(
-          (random(10) * 2px),
-          (random(10) * -2px),
-          (random(10) * 2px)
-        )
-        scale(random(2)) rotate((random(540) * 1deg));
+      opacity: 1;
     }
 
     100% {
-      opacity: 0;
-      transform: translate3d(
-          (random(10) * 30px),
-          (random(10) * -20px),
-          (random(10) * 20px)
-        )
-        scale(random(2)) rotate((random(540) * 1deg));
+      transform: translate((random(10) * 15%), (random(10) * -85%));
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .reactLogo {
+      background-size: 75%;
     }
   }
   .javaScriptLogo {
     background-image: url('../asset/images/logos/js.png');
-    background-size: 30%;
-    animation: animate 34s linear infinite;
+    background-size: 20%;
+    left: 55%;
+    top: 72%;
+    animation: animate 23s linear infinite;
+    animation-delay: 3s;
     animation-name: jsApparition;
     animation-timing-function: ease;
   }
   @keyframes jsApparition {
     0% {
-      transform: translate3d(
-          (random(10) * 3px),
-          (random(10) * -1px),
-          (random(10) * 3px)
-        )
-        scale(random(2)) rotate((random(540) * 1deg));
+      opacity: 1;
     }
 
     100% {
-      opacity: 0;
-      transform: translate3d(
-          (random(10) * 30px),
-          (random(10) * -20px),
-          (random(10) * 20px)
-        )
-        scale(random(2)) rotate((random(540) * 1deg));
+      transform: translate((random(10) * 13%), (random(10) * -83%));
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .javaScriptLogo {
+      background-size: 70%;
     }
   }
   .htmlLogo {
     background-image: url('../asset/images/logos/icons8-html-5-48.png');
-    animation: animate 33s linear infinite;
+    background-size: 22%;
+    left: 47%;
+    top: 76%;
+    animation: animate 22s linear infinite;
+    animation-delay: 2.5s;
     animation-name: htmlApparition;
     animation-timing-function: ease;
   }
   @keyframes htmlApparition {
     0% {
+      opacity: 1;
     }
 
     100% {
-      opacity: 0;
-      transform: translate3d(
-          (random(10) * 30px),
-          (random(10) * -20px),
-          (random(10) * 20px)
-        )
-        scale(random(2)) rotate((random(540) * 1deg));
+      transform: translate((random(10) * 9%), (random(10) * -71%));
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .htmlLogo {
+      background-size: 70%;
     }
   }
   .cssLogo {
     background-image: url('../asset/images/logos/icons8-css3-48.png');
-    animation: animate 29s linear infinite;
+    background-size: 22%;
+    left: 66%;
+    top: 75%;
+    animation: animate 24s linear infinite;
+    animation-delay: 3.2s;
     animation-name: cssApparition;
     animation-timing-function: ease;
   }
   @keyframes cssApparition {
     0% {
-      transform: translate3d(
-          (random(10) * 3px),
-          (random(10) * -5px),
-          (random(10) * 1px)
-        )
-        scale(random(2)) rotate((random(540) * 1deg));
+      opacity: 1;
     }
 
     100% {
-      opacity: 0;
-      transform: translate3d(
-          (random(10) * 20px),
-          (random(10) * -10px),
-          (random(10) * 20px)
-        )
-        scale(random(2)) rotate((random(540) * 1deg));
+      transform: translate((random(10) * 12%), (random(10) * -59%));
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .cssLogo {
+      background-size: 70%;
     }
   }
   .linuxLogo {
     background-image: url('../asset/images/logos/icons8-linux-48.png');
-    animation: animate 28s linear infinite;
+    background-size: 22%;
+    top: 78%;
+    animation: animate 21s linear infinite;
+    animation-delay: 8.2s;
     animation-name: linuxApparition;
     animation-timing-function: ease;
   }
   @keyframes linuxApparition {
     0% {
+      opacity: 1;
     }
 
     100% {
-      opacity: 0;
-      transform: translateX((random(10) * -110px))
-        translateY((random(10) * -10px)) scale(random(2))
-        rotate((random(540) * 1deg));
+      transform: translate((random(10) * 5%), (random(10) * -69%));
     }
   }
-
+  @media only screen and (max-width: 500px) {
+    .linuxLogo {
+      background-size: 80%;
+    }
+  }
   .windowsLogo {
     background-image: url('../asset/images/logos/icons8-windows-xp-48.png');
-    animation: animate 27s linear infinite;
+    background-size: 25%;
+    top: 77%;
+    animation: animate 21s linear infinite;
+    animation-delay: 7.1s;
     animation-name: windowsApparition;
     animation-timing-function: ease;
   }
   @keyframes windowsApparition {
     0% {
-      transform: translate3d(
-          (random(10) * 1px),
-          (random(10) * -4px),
-          (random(10) * 1px)
-        )
-        scale(random(2)) rotate((random(540) * 1deg));
+      opacity: 1;
     }
 
     100% {
-      opacity: 0;
-      transform: translateX((random(10) * -120px))
-        translateY((random(10) * -5px)) scale(random(2))
-        rotate((random(540) * 1deg));
+      transform: translate((random(10) * 7%), (random(10) * -86%));
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .windowsLogo {
+      background-size: 85%;
     }
   }
   .vsLogo {
     background-image: url('../asset/images/logos/icons8-visual-studio-code-2019-48.png');
-    animation: animate 9s linear infinite;
+    background-size: 25%;
+    top: 77%;
+    left: 6%;
+    animation: animate 23s linear infinite;
+    animation-delay: 9s;
     animation-name: vsApparition;
     animation-timing-function: ease;
   }
   @keyframes vsApparition {
     0% {
+      opacity: 1;
     }
 
     100% {
-      opacity: 0;
-      transform: translate3d(
-          (random(10) * 30px),
-          (random(10) * -20px),
-          (random(10) * 20px)
-        )
-        scale(random(2)) rotate((random(540) * 1deg));
+      transform: translate((random(10) * 7%), (random(10) * -76%));
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .vsLogo {
+      background-size: 80%;
     }
   }
   .gimpfLogo {
     background-image: url('../asset/images/logos/icons8-gimp-48.png');
-    animation: animate 29s linear infinite;
+    background-size: 25%;
+    top: 75%;
+    left: 10%;
+    animation: animate 24s linear infinite;
+    animation-delay: 10s;
     animation-name: gimpfApparition;
     animation-timing-function: ease;
   }
   @keyframes gimpfApparition {
     0% {
-      transform: translate3d(
-          (random(10) * 1px),
-          (random(10) * -2px),
-          (random(10) * 1px)
-        )
-        scale(random(2)) rotate((random(540) * 1deg));
+      opacity: 1;
     }
 
     100% {
-      opacity: 0;
-      transform: translateX((random(10) * -85px)) translateY((random(10) * 5px))
-        scale(random(2)) rotate((random(540) * 1deg));
+      transform: translate((random(10) * 6%), (random(10) * -69%));
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .gimpfLogo {
+      background-size: 80%;
     }
   }
   .brain {
@@ -279,7 +295,7 @@
     top: 17%;
     z-index: -2;
     opacity: 0;
-    animation: animate 14s linear;
+    animation: animate 6s linear;
     animation-name: brainApparition;
     animation-timing-function: ease;
   }
@@ -304,7 +320,7 @@
     display: flex;
     justify-content: space-evenly;
     margin: 15vh 7vw 0 0;
-    animation: animate 9s linear;
+    animation: animate 4s linear;
     animation-name: homeTextApparition;
     animation-timing-function: ease;
 
