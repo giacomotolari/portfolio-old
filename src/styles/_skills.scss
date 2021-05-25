@@ -2,7 +2,7 @@
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
-  display: block;
+
 
   .skillsLogo {
     // border: 1px solid yellow;
@@ -16,8 +16,8 @@
   }
   @media only screen and (max-width: 500px) {
     .skillsLogo {
-      width: 10vw;
-      height: 10vh;
+      width: 14vw;
+      height: 14vh;
       background-size: 100%;
     }
   }
@@ -26,14 +26,14 @@
     background-size: 20%;
     top: 80%;
     left: 20%;
-    animation: animate 24s linear infinite;
-    animation-delay: 6s;
+    animation: animate 30s linear infinite;
+    animation-delay: 10s;
     animation-name: gitHubApparition;
     animation-timing-function: ease;
   }
   @media only screen and (max-width: 500px) {
     .gitHubLogo {
-      background-size: 80%;
+      background-size: 75%;
     }
   }
   @keyframes gitHubApparition {
@@ -42,7 +42,7 @@
     }
 
     100% {
-      transform: translate((random(10) * 10%), (random(10) * -80%));
+      transform: translate((random(10) * 10%), (random(10) * -90%));
     }
   }
   .bootstrapLogo {
@@ -50,8 +50,8 @@
     background-size: 50%;
     top: 80%;
     left: 65%;
-    animation: animate 26s linear infinite;
-    animation-delay: 7.5s;
+    animation: animate 29s linear infinite;
+    animation-delay: 11s;
     animation-name: bootstrapApparition;
     animation-timing-function: ease;
   }
@@ -61,12 +61,12 @@
     }
 
     100% {
-      transform: translate((random(10) * 10%), (random(10) * -95%));
+      transform: translate((random(10) * 10%), (random(10) * -105%));
     }
   }
   @media only screen and (max-width: 500px) {
     .bootstrapLogo {
-      background-size: 160%;
+      background-size: 175%;
     }
   }
   .sassLogo {
@@ -74,8 +74,8 @@
     background-size: 25%;
     top: 82%;
     left: 53%;
-    animation: animate 25s linear infinite;
-    animation-delay: 5.5s;
+    animation: animate 30s linear infinite;
+    animation-delay: 12s;
     animation-name: sassApparition;
     animation-timing-function: ease;
   }
@@ -85,7 +85,7 @@
     }
 
     100% {
-      transform: translate((random(10) * -10%), (random(10) * -75%));
+      transform: translate((random(10) * -10%), (random(10) * -85%));
     }
   }
   @media only screen and (max-width: 500px) {
@@ -96,10 +96,10 @@
   .reactLogo {
     background-image: url('../asset/images/logos/react.png');
     background-size: 25%;
-    top: 68%;
+    top: 78%;
     left: 51%;
-    animation: animate 25s linear infinite;
-    animation-delay: 4.7s;
+    animation: animate 31s linear infinite;
+    animation-delay: 6s;
     animation-name: reactApparition;
     animation-timing-function: ease;
   }
@@ -109,21 +109,21 @@
     }
 
     100% {
-      transform: translate((random(10) * 15%), (random(10) * -85%));
+      transform: translate((random(10) * -15%), (random(10) * -85%));
     }
   }
   @media only screen and (max-width: 500px) {
     .reactLogo {
-      background-size: 75%;
+      background-size: 80%;
     }
   }
   .javaScriptLogo {
     background-image: url('../asset/images/logos/js.png');
     background-size: 20%;
-    left: 55%;
-    top: 72%;
-    animation: animate 23s linear infinite;
-    animation-delay: 3s;
+    left: 65%;
+    top: 75%;
+    animation: animate 27s linear infinite;
+    animation-delay: 4s;
     animation-name: jsApparition;
     animation-timing-function: ease;
   }
@@ -138,16 +138,16 @@
   }
   @media only screen and (max-width: 500px) {
     .javaScriptLogo {
-      background-size: 70%;
+      background-size: 75%;
     }
   }
   .htmlLogo {
     background-image: url('../asset/images/logos/icons8-html-5-48.png');
     background-size: 22%;
     left: 47%;
-    top: 76%;
-    animation: animate 22s linear infinite;
-    animation-delay: 2.5s;
+    top: 70%;
+    animation: animate 28s linear infinite;
+    animation-delay: 3s;
     animation-name: htmlApparition;
     animation-timing-function: ease;
   }
@@ -157,21 +157,21 @@
     }
 
     100% {
-      transform: translate((random(10) * 9%), (random(10) * -71%));
+      transform: translate((random(10) * 9%), (random(10) * -91%));
     }
   }
   @media only screen and (max-width: 500px) {
     .htmlLogo {
-      background-size: 70%;
+      background-size: 75%;
     }
   }
   .cssLogo {
     background-image: url('../asset/images/logos/icons8-css3-48.png');
     background-size: 22%;
-    left: 66%;
-    top: 75%;
-    animation: animate 24s linear infinite;
-    animation-delay: 3.2s;
+    left: 72%;
+    top: 65%;
+    animation: animate 29s linear infinite;
+    animation-delay: 3.5s;
     animation-name: cssApparition;
     animation-timing-function: ease;
   }
@@ -181,20 +181,20 @@
     }
 
     100% {
-      transform: translate((random(10) * 12%), (random(10) * -59%));
+      transform: translate((random(10) * 12%), (random(10) * -69%));
     }
   }
   @media only screen and (max-width: 500px) {
     .cssLogo {
-      background-size: 70%;
+      background-size: 75%;
     }
   }
   .linuxLogo {
     background-image: url('../asset/images/logos/icons8-linux-48.png');
     background-size: 22%;
-    top: 78%;
-    animation: animate 21s linear infinite;
-    animation-delay: 8.2s;
+    top: 68%;
+    animation: animate 31s linear infinite;
+    animation-delay: 13s;
     animation-name: linuxApparition;
     animation-timing-function: ease;
   }
@@ -204,7 +204,7 @@
     }
 
     100% {
-      transform: translate((random(10) * 5%), (random(10) * -69%));
+      transform: translate((random(10) * 5%), (random(10) * -79%));
     }
   }
   @media only screen and (max-width: 500px) {
@@ -216,8 +216,9 @@
     background-image: url('../asset/images/logos/icons8-windows-xp-48.png');
     background-size: 25%;
     top: 77%;
-    animation: animate 21s linear infinite;
-    animation-delay: 7.1s;
+    left: 23%;
+    animation: animate 30s linear infinite;
+    animation-delay: 15s;
     animation-name: windowsApparition;
     animation-timing-function: ease;
   }
@@ -227,7 +228,7 @@
     }
 
     100% {
-      transform: translate((random(10) * 7%), (random(10) * -86%));
+      transform: translate((random(10) * -12%), (random(10) * -86%));
     }
   }
   @media only screen and (max-width: 500px) {
@@ -237,11 +238,11 @@
   }
   .vsLogo {
     background-image: url('../asset/images/logos/icons8-visual-studio-code-2019-48.png');
-    background-size: 25%;
+    background-size: 20%;
     top: 77%;
     left: 6%;
-    animation: animate 23s linear infinite;
-    animation-delay: 9s;
+    animation: animate 34s linear infinite;
+    animation-delay: 16s;
     animation-name: vsApparition;
     animation-timing-function: ease;
   }
@@ -251,21 +252,21 @@
     }
 
     100% {
-      transform: translate((random(10) * 7%), (random(10) * -76%));
+      transform: translate((random(10) * -7%), (random(10) * -76%));
     }
   }
   @media only screen and (max-width: 500px) {
     .vsLogo {
-      background-size: 80%;
+      background-size: 75%;
     }
   }
   .gimpfLogo {
     background-image: url('../asset/images/logos/icons8-gimp-48.png');
-    background-size: 25%;
+    background-size: 20%;
     top: 75%;
     left: 10%;
-    animation: animate 24s linear infinite;
-    animation-delay: 10s;
+    animation: animate 34s linear infinite;
+    animation-delay: 18s;
     animation-name: gimpfApparition;
     animation-timing-function: ease;
   }
@@ -280,7 +281,7 @@
   }
   @media only screen and (max-width: 500px) {
     .gimpfLogo {
-      background-size: 80%;
+      background-size: 75%;
     }
   }
   .brain {
