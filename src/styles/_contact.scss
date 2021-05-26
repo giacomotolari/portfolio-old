@@ -3,7 +3,7 @@
   background-image: url('../asset/images/background-image.jpg');
   background-repeat: no-repeat;
   background-size: 35%;
-  animation: animate 2.5s linear;
+  animation: animate 1s linear;
   animation-name: backgroudMove;
   animation-timing-function: ease-out;
 
@@ -127,6 +127,7 @@
     }
     svg:hover {
       color: brown;
+      animation: jello-horizontal 0.9s both;
     }
   }
 }
