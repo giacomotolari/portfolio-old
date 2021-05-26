@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+// import iconData from '../../../data/links/iconData.json';
 
 const Projects = () => {
   return (
@@ -34,6 +35,7 @@ const Projects = () => {
               </svg>
             </div>
           </div>
+
           <a
             href='https://al-porto.netlify.app/'
             target='_blank'
