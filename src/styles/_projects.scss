@@ -1,4 +1,73 @@
 .Projects {
+  max-width: 100vw;
+  height: 80vh;
+  // margin: 10vh 0;
+
+  .projectsWrapper {
+    // border: 1px solid green;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animate 6s linear;
+    animation-name: projectsApparition;
+    animation-timing-function: ease;
+
+    h5 {
+      text-align: center;
+    }
+    .project {
+      width: 55%;
+      height: 95%;
+      margin: 3vw;
+      // border: 1px solid blue;
+    }
+    .projectBackground {
+      // border: 1px solid yellow;
+      width: 100%;
+      height: 70%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .project1 {
+      background-image: url('https://images.unsplash.com/photo-1541044824061-afc156516935?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    }
+    .project2 {
+      background-image: url('https://images.unsplash.com/photo-1597347343908-2937e7dcc560?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+    }
+    .project3 {
+      background-image: url('https://images.unsplash.com/photo-1570215171424-f74325192b55?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    }
+    .projectIcons {
+      // border: 1px solid yellow;
+      width: 100%;
+      height: 13%;
+    }
+  }
+  @keyframes projectsApparition {
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .projectsWrapper {
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .projectsWrapper {
+      margin-top: 7vh;
+    }
+  }
 }
 
 .spaceApparition {
