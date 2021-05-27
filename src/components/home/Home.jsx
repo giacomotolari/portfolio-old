@@ -10,9 +10,8 @@ const Home = () => {
           <p>
             Hello everyone! <br />
             <br />
-            <br /> I am Giacomo a student of DCI and I want to become a good Web
-            Developer. <br />
-            In this page I will introduce myself, my skills and my projects.
+            <br /> Giacomo is there, I am a student of DCI, and I want become a Web Developer  <br />
+            In this page I'll introduce myself, my skills and my projects.
           </p>
         </div>
 
