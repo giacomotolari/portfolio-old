@@ -31,8 +31,8 @@ const Main = () => {
         <Route path='/burgermenu'>
           <BurgerMenu />
         </Route>
-      </Switch>
-      <Switch>
+      {/* </Switch>
+      <Switch> */}
         <Route path='/skills'>
           <Skills />
         </Route>

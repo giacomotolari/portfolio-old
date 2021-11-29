@@ -46,9 +46,12 @@ const FooterNavbar = () => {
           </Link>
         </li>
         <li onClick={displayCurriculum}>
-          <Link id='navCurriculum' className='navLink' to='/curriculum'>
+          <a
+            href='https://www.canva.com/design/DAEvPnMB4Q4/XsYZ7VDnezevjvMAM3eMrA/view?utm_content=DAEvPnMB4Q4&utm_campaign=designshare&utm_medium=link&utm_source=viewer'
+            target='blank'
+          >
             CV
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>
