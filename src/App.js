@@ -18,9 +18,7 @@ function App() {
     <Router>
       <div className='App' id='app-background'>
         <Header />
-
         <Main />
-
         <Footer />
       </div>
     </Router>

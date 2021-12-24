@@ -3,7 +3,6 @@
   max-height: 100%;
   overflow: hidden;
 
-
   .skillsLogo {
     // border: 1px solid yellow;
     width: 22vw;
@@ -333,7 +332,16 @@
   @media only screen and (max-width: 400px) {
     .skillsLists {
       flex-direction: column;
-      margin: 4vh 7vw;
+      margin: 2vh 5vw;
+
+      ul {
+        margin: 1% 0;
+      }
+      .languages {
+        li {
+          font-size: 90%;
+        }
+      }
     }
   }
 }

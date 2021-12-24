@@ -10,6 +10,10 @@
 
     li {
       margin: 0 2vw;
+      .active {
+        color: red !important;
+        font-weight: bolder;
+      }
     }
   }
 }

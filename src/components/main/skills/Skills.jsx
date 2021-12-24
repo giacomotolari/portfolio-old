@@ -16,6 +16,7 @@ const Skills = () => {
       <div className='skillsLogo vsLogo'></div>
       <div className='skillsLogo gimpfLogo'></div>
       <div className='brain'></div>
+
       <section className='skillsLists'>
         <ul className='informatic'>
           <h4>Informatic</h4>
@@ -31,6 +32,13 @@ const Skills = () => {
           <li>HTML5</li>
           <li>CSS3 / SASS / BOOTSTRAP</li>
           <li>JavaSript / REACT JS</li>
+        </ul>
+        <ul className='backEnd'>
+          <h4>Back End</h4>
+          <li>Node JS / EXPRESS JS</li>
+          <li>MongoDB / Mongoose / NoSQLBooster</li>
+          <li>SQL / MySQL / SQLite </li>
+          <li>POSTMANN/ REST CLIENT </li>
         </ul>
         <ul className='languages'>
           <h4>Languages</h4>

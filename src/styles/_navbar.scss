@@ -10,27 +10,25 @@
     animation-name: navbarApparition;
     animation-timing-function: ease;
   }
-
-  .navLink {
-    text-decoration: none;
-    color: $color-yellow;
-    margin: 5px;
-    margin: 0 8vw 0 0vw;
+  li {
+    .navLink {
+      text-decoration: none;
+      color: $color-yellow;
+      margin: 5px;
+      margin: 0 8vw 0 0vw;
+    }
+    .active {
+      color: red !important;
+      font-weight: bolder;
+      font-size: 200%;
+    }
   }
+
   .navLink:hover {
-
-    box-shadow: 
-      0 75px 60px red;
-      
+    box-shadow: 0 75px 60px red;
   }
 
 
- 
-
-  #navHome {
-    color: red;
-    font-size: 200%;
-  }
 
   @media only screen and (max-width: 750px) {
     .navbarUl {

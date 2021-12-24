@@ -10,15 +10,13 @@ const Home = () => {
           <p>
             Hello everyone! <br />
             <br />
-            <br /> Giacomo is there, I am a student of DCI, and I want become a Web Developer  <br />
+            <br /> Giacomo is there, I am a Junior Full Stack Developer
+            <br />
             In this page I'll introduce myself, my skills and my projects.
           </p>
         </div>
-
-        {/* <h3>WEB DEVELOPER</h3>
-          <h3>GIACOMO TOLARI</h3> */}
       </section>
-      
+
       <section className='sectionFoto'>
         <h1>GIACOMO TOLARI</h1>
 
