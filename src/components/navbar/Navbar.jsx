@@ -2,12 +2,15 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTheme } from '../../ThemeContext';
 
 const Navbar = () => {
+  const { burgerMenu, setBurgerMenu, devices } = useTheme();
+
   return (
     <div className='Navbar'>
-      <nav className='navBar-components'>
-        <ul className='navbarUl navbarUlColumn'>
+      {!devices.burgerMenu || !burgerMenu ? (
+        <ul className={!burgerMenu ? 'navBar' : 'burgerMenu'}>
           <li>
             <NavLink id='navHome' className='navLink' to='/'>
               HOME
@@ -30,6 +33,7 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
+      ) : (
         <div className='burgerIcon' to='/burgermenu'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -43,7 +47,7 @@ const Navbar = () => {
             />
           </svg>
         </div>
-      </nav>
+      )}
     </div>
   );
 };

@@ -1,11 +1,10 @@
 .Navbar {
-  .navbarUl {
+  .navBar {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     font-size: large;
     font-weight: bold;
-
     animation: animate 1.5s linear;
     animation-name: navbarApparition;
     animation-timing-function: ease;
@@ -28,20 +27,16 @@
     box-shadow: 0 75px 60px red;
   }
 
-
-
-  @media only screen and (max-width: 750px) {
-    .navbarUl {
-      display: none;
-    }
-    ul {
-      font-size: large;
-    }
-  }
+  // @media only screen and (max-width: 750px) {
+  //   .navBar {
+  //     display: none;
+  //     font-size: large;
+  //   }
+  // }
 }
 
 .burgerIcon {
-  display: none;
+  // display: none;
   color: $color-yellow;
   width: calc(2em + 2vw);
   height: calc(1.5em + 2vh);
@@ -55,7 +50,7 @@
 
 @media only screen and (max-width: 749px) {
   .burgerIcon {
-    display: block;
+    // display: block;
     position: absolute;
     right: 5vw;
     top: 2vh;

@@ -9,19 +9,24 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './styles/app.scss';
-import Header from './components/header/Header';
+import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Main from './components/main/Main';
+import { ThemeProvider, useTheme } from './ThemeContext';
 
 function App() {
+  const  burgerMenu  = useTheme();
+
   return (
-    <Router>
-      <div className='App' id='app-background'>
-        <Header />
-        <Main />
-        <Footer />
-      </div>
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <div className='App' id='app-background'>
+          <Navbar />
+          {!burgerMenu && <Main />}
+          <Footer />
+        </div>
+      </Router>
+    </ThemeProvider>
   );
 }
 

@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import useMediaQuery from './components/useMediaQuery';
+import useMediaQuery from './components/UseMediaQuery';
 
 const ThemeContext = React.createContext();
 
