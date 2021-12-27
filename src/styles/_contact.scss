@@ -116,6 +116,14 @@
     }
   }
 
+  @media (max-height: 600px) and (min-width: 1024px) {
+    .contact {
+      margin-top: -12vh;
+    }
+  }
+
+
+
   footer {
     text-align: center;
 
