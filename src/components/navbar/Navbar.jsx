@@ -65,7 +65,7 @@ const Navbar = () => {
         )
       )}
       {devices.burgerMenu && burgerMenu === true && (
-        <p className='burgerIcon' onClick={burgerMenuToggle}>
+        <p className='burgerX' onClick={burgerMenuToggle}>
           X
         </p>
       )}

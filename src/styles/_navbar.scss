@@ -26,31 +26,24 @@
   .navLink:hover {
     box-shadow: 0 75px 60px red;
   }
-
-  // @media only screen and (max-width: 750px) {
-  //   .navBar {
-  //     display: none;
-  //     font-size: large;
-  //   }
-  // }
 }
 
 .burgerIcon {
-  // display: none;
   color: $color-yellow;
   width: calc(2em + 2vw);
   height: calc(1.5em + 2vh);
-  // width: 46px;
-  // height: 46px;
 }
-.burgerIcon:hover {
+
+.burgerX {
   color: $color-yellow;
-  border: $color-white 1px solid;
+  position: absolute;
+  right: 6vw;
+  top: -1vh;
+  font-size: clamp(2em, 2vw, 3em);
 }
 
 @media only screen and (max-width: 749px) {
   .burgerIcon {
-    // display: block;
     position: absolute;
     right: 5vw;
     top: 2vh;
