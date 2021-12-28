@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className='Navbar'>
       {!devices.burgerMenu ||
-        (burgerMenu === true && (
+        burgerMenu === true ? (
           <ul className={!burgerMenu ? 'navBar' : 'burgerMenu'}>
             <li onClick={burgerMenuToggle}>
               <NavLink id='navHome' className='navLink' to='/'>
@@ -43,8 +43,8 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-        ))}
-      {devices.burgerMenu && !burgerMenu === true && (
+        ) : 
+      devices.burgerMenu && !burgerMenu === true && (
         <div onClick={burgerMenuToggle} className='burgerIcon' to='/burgermenu'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
