@@ -12,21 +12,21 @@ import './styles/app.scss';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Main from './components/main/Main';
-import { ThemeProvider, useTheme } from './ThemeContext';
+import { useTheme } from './ThemeContext';
 
 function App() {
-  const  burgerMenu  = useTheme();
+  const { burgerMenu } = useTheme();
+
+
 
   return (
-    <ThemeProvider>
-      <Router>
-        <div className='App' id='app-background'>
-          <Navbar />
-          {!burgerMenu && <Main />}
-          <Footer />
-        </div>
-      </Router>
-    </ThemeProvider>
+    <Router>
+      <div className='App' id='app-background'>
+         <Navbar />
+        {!burgerMenu && <Main />}
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

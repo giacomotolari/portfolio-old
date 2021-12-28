@@ -7,34 +7,45 @@ import { useTheme } from '../../ThemeContext';
 const Navbar = () => {
   const { burgerMenu, setBurgerMenu, devices } = useTheme();
 
+  const burgerMenuToggle = () => {
+    if (burgerMenu === false) {
+      setBurgerMenu(true);
+    }
+    if (burgerMenu === true) {
+      setBurgerMenu(false);
+    }
+  };
+
   return (
     <div className='Navbar'>
-      {!devices.burgerMenu || !burgerMenu ? (
-        <ul className={!burgerMenu ? 'navBar' : 'burgerMenu'}>
-          <li>
-            <NavLink id='navHome' className='navLink' to='/'>
-              HOME
-            </NavLink>
-          </li>
-          <li>
-            <NavLink id='navProjects' className='navLink' to='/projects'>
-              PROJECTS
-            </NavLink>
-          </li>
-          <li>
-            <NavLink id='navAbout' className='navLink' to='/about'>
-              ABOUT
-            </NavLink>
-          </li>
+      {!devices.burgerMenu ||
+        (burgerMenu === true && (
+          <ul className={!burgerMenu ? 'navBar' : 'burgerMenu'}>
+            <li onClick={burgerMenuToggle}>
+              <NavLink id='navHome' className='navLink' to='/'>
+                HOME
+              </NavLink>
+            </li>
+            <li onClick={burgerMenuToggle}>
+              <NavLink id='navProjects' className='navLink' to='/projects'>
+                PROJECTS
+              </NavLink>
+            </li>
+            <li onClick={burgerMenuToggle}>
+              <NavLink id='navAbout' className='navLink' to='/about'>
+                ABOUT
+              </NavLink>
+            </li>
 
-          <li>
-            <NavLink id='navContact' className='navLink' to='/contact'>
-              CONTACT
-            </NavLink>
-          </li>
-        </ul>
-      ) : (
-        <div className='burgerIcon' to='/burgermenu'>
+            <li onClick={burgerMenuToggle}>
+              <NavLink id='navContact' className='navLink' to='/contact'>
+                CONTACT
+              </NavLink>
+            </li>
+          </ul>
+        ))}
+      {devices.burgerMenu && !burgerMenu === true && (
+        <div onClick={burgerMenuToggle} className='burgerIcon' to='/burgermenu'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='currentColor'
@@ -47,6 +58,11 @@ const Navbar = () => {
             />
           </svg>
         </div>
+      )}
+      {devices.burgerMenu && burgerMenu === true && (
+        <p className='burgerIcon' onClick={burgerMenuToggle}>
+          X
+        </p>
       )}
     </div>
   );

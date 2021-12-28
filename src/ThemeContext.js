@@ -28,7 +28,8 @@ export function ThemeProvider({ children }) {
     <ThemeContext.Provider
       value={{
         devices,
-        burgerMenu, setBurgerMenu
+        burgerMenu,
+        setBurgerMenu,
       }}
     >
       {children}
