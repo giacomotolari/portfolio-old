@@ -1,10 +1,16 @@
-#Footer {
+.Footer {
   // border: solid 1px blue;
   display: flex;
   justify-content: flex-start;
   position: fixed;
-  bottom: 3vh;
-
+  bottom: 2.5vh;
+  animation: animate 3s linear;
+  animation-name: footerApparition;
+  animation-timing-function: ease-out;
+  margin-top: 100vh;
+  .IconsWrapper {
+    margin-top: 3vh;
+  }
   svg {
     margin-left: 2vw;
     width: calc(1em + 0.4vw);
@@ -82,12 +88,6 @@
       transform: scale3d(1, 1, 1);
     }
   }
-}
-
-.Footer {
-  animation: animate 3s linear;
-  animation-name: footerApparition;
-  animation-timing-function: ease-out;
 }
 
 @keyframes footerApparition {

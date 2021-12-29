@@ -1,5 +1,5 @@
 .navBarFooter {
-  ul {
+  
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -15,7 +15,7 @@
         font-weight: bolder;
       }
     }
-  }
+  
 }
 
 @media only screen and (max-width: 750px) {
