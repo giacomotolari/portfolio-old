@@ -1,18 +1,23 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-// import iconData from '../../../data/links/iconData.json';
+import projects from '../../../data/projects'
+import Project from './Project'
 
 const Projects = () => {
   return (
     <div className='Projects'>
       <div className='spaceApparition'></div>
       <section className='projectsWrapper'>
-        <div className='project'>
+        {
+          projects.map((project) => {
+            return (<Project />)
+           
+          })
+        }
+        {/* <div className='project'>
           <div className='projectHead'>
             <h5>Poems</h5>
-            {/* view project code */}
             <div className='codeIcon' title='view projectcode'>
-              {/* <a href={props.cardData.jsbinLink}> */}
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='currentColor'
@@ -21,9 +26,8 @@ const Projects = () => {
               >
                 <path d='M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z' />
               </svg>
-              {/* </a> */}
             </div>
-            {/* information about the project */}
+
             <div className='infoIcon' title='information about the project'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -48,9 +52,8 @@ const Projects = () => {
         <div className='project'>
           <div className='projectHead'>
             <h5>Coach</h5>
-            {/* view project code */}
+
             <div className='codeIcon' title='view projectcode'>
-              {/* <a href={props.cardData.jsbinLink}> */}
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='currentColor'
@@ -59,9 +62,8 @@ const Projects = () => {
               >
                 <path d='M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z' />
               </svg>
-              {/* </a> */}
             </div>
-            {/* information about the project */}
+
             <div className='infoIcon' title='information about the project'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -84,9 +86,8 @@ const Projects = () => {
         <div className='project'>
           <div className='projectHead'>
             <h5>Project-Owner</h5>
-            {/* view project code */}
+
             <div className='codeIcon' title='view projectcode'>
-              {/* <a href={props.cardData.jsbinLink}> */}
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='currentColor'
@@ -95,9 +96,8 @@ const Projects = () => {
               >
                 <path d='M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z' />
               </svg>
-              {/* </a> */}
             </div>
-            {/* information about the project */}
+
             <div className='infoIcon' title='information about the project'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -116,7 +116,7 @@ const Projects = () => {
           >
             <div className='projectBackground project3'></div>
           </a>
-        </div>
+        </div> */}
       </section>
     </div>
   );

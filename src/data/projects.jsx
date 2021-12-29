@@ -1,39 +1,40 @@
-// import Icon from '../components/Icon.jsx'
-
 const projects = [
   {
-    imageLink: 'http://localhost:5001/reactiontesterindex',
-    headerAlt: 'image project reactiontester',
-    cardTitle: 'REACTION TESTER',
-    // cardText: "Try to click on the square in the shortest time possible.",
-    cardMuted: 'How to calculate time with javascript',
-    downloadZip: 'reactiontester.zip',
-    jsbinLink: 'https://jsbin.com/?html,js,output',
-    image: 'images/Giacomo_Tolari/reactiontester.png',
-    download: require('./downloads/reactiontester.zip')
+    title: 'Al Porto',
+    type: 'Poems Web Page',
+    technologies: [
+      'HTML',
+      'Java Script',
+      'React JS',
+      'Sass',
+      'CSS3',
+      'Node Js',
+      'Express Js',
+      'Mongoose',
+    ],
+    state: 'In Progress',
+    startDate: '10.10.2021',
+    gitHubUrl: 'https://github.com/giacomotolari/poesie',
+    projectUrl: 'https://al-porto.netlify.app/',
   },
   {
-    imageLink: 'http://localhost:5001/changegameindex',
-    headerAlt: 'image project changegame',
-    cardTitle: 'CHANGE GAME',
-    // cardText: "A game that changes the text and style",
-    cardMuted: 'Learn to change the style dynamically',
-    downloadZip: 'changegame.zip',
-    jsbinLink: 'https://jsbin.com/?html,js,output',
-    image: 'images/Giacomo_Tolari/changegame.png',
-    download: require('./downloads/changegame.zip')
+    title: 'Stefano Fitness',
+    type: 'Fitness Trainer Web Page',
+    technologies: ['HTML5', 'Java Script', 'React JS', 'Sass', 'CSS3'],
+    state: 'In Progress',
+    startDate: '12.08.2021',
+    gitHubUrl: 'https://github.com/giacomotolari/stefanoFitness',
+    projectUrl: 'https://stefanofitness.netlify.app/',
   },
   {
-    imageLink: 'http://localhost:5001/flexboxindex',
-    headerAlt: 'image project flexbox',
-    cardTitle: 'FLEXBOX GAME',
-    // cardText: "Play with the flex-box properties",
-    cardMuted: 'Learn the flex-box properties of CSS',
-    downloadZip: 'flexbox.zip',
-    jsbinLink: 'https://jsbin.com/?html,js,output',
-    image: 'images/Giacomo_Tolari/flexbox.png',
-    download: require('./downloads/flexbox.zip')
-  }
+    title: 'Mancala',
+    type: 'Board Game',
+    technologies: ['HTML5', 'Java Script', 'React JS', 'Sass', 'CSS3'],
+    state: 'In Progress',
+    startDate: '02.06.2021',
+    gitHubUrl: 'https://github.com/giacomotolari/mancala',
+    projectUrl: 'https://mancalagame.netlify.app/',
+  },
 ];
 
 export default projects;
