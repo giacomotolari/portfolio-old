@@ -1,7 +1,7 @@
 const projects = [
   {
     title: 'Al Porto',
-    type: 'Poems Web Page',
+    description: 'Poems Web Page',
     technologies: [
       'HTML',
       'Java Script',
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: 'Stefano Fitness',
-    type: 'Fitness Trainer Web Page',
+    description: 'Fitness Trainer Web Page',
     technologies: ['HTML5', 'Java Script', 'React JS', 'Sass', 'CSS3'],
     state: 'In Progress',
     startDate: '12.08.2021',
@@ -28,7 +28,7 @@ const projects = [
   },
   {
     title: 'Mancala',
-    type: 'Board Game',
+    description: 'Board Game',
     technologies: ['HTML5', 'Java Script', 'React JS', 'Sass', 'CSS3'],
     state: 'In Progress',
     startDate: '02.06.2021',

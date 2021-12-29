@@ -1,12 +1,24 @@
 import React from 'react';
 
 function Project(props) {
+  const {
+    title,
+    description,
+    // tecnologies,
+    state,
+    // startDate,
+    gitHubUrl,
+    projectUrl,
+  } = props.item;
   return (
     <div className='project'>
       <div className='projectHead'>
-        <h5>{props.title}</h5>
+        <a href={projectUrl}>
+          <h5>{title}</h5>
+        </a>
+
         <div className='codeIcon' title='view projectcode'>
-          <a href={props.gitHubUrl} target='_blank' rel='noreferrer'>
+          <a href={gitHubUrl} target='_blank' rel='noreferrer'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='currentColor'
@@ -28,9 +40,13 @@ function Project(props) {
           </svg>
         </div> */}
       </div>
-      <a href={props.projectUrl} target='_blank' rel='noreferrer'>
-        <div className={props.styleClass} id={props.styleId}></div>
+      <a href={projectUrl} target='_blank' rel='noreferrer'>
+        <div className={`projectBackground ${props.styleClass}`}></div>
       </a>
+      <div className='projectFooter'>
+        <p style={{ color: 'white' }}>{description}</p>
+        <p>{state}</p>
+      </div>
     </div>
   );
 }
