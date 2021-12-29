@@ -3,6 +3,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTheme } from '../../ThemeContext';
+import FooterIcons from '../footer/FooterIcons'
 
 const Navbar = () => {
   const { burgerMenu, setBurgerMenu, devices } = useTheme();
@@ -60,6 +61,9 @@ const Navbar = () => {
                 >
                   CV
                 </a>
+              </li>
+              <li className='BurgerMenuIcons'>
+                <FooterIcons />
               </li>
             </>
           )}
