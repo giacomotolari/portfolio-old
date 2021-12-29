@@ -16,7 +16,6 @@ function Project(props) {
         <a href={projectUrl}>
           <h5>{title}</h5>
         </a>
-
         <div className='codeIcon' title='view projectcode'>
           <a href={gitHubUrl} target='_blank' rel='noreferrer'>
             <svg
@@ -45,7 +44,7 @@ function Project(props) {
       </a>
       <div className='projectFooter'>
         <p style={{ color: 'white' }}>{description}</p>
-        <p>{state}</p>
+        <p className='projectState'>{state}</p>
       </div>
     </div>
   );

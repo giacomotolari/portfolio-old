@@ -1,6 +1,10 @@
 .Projects {
   max-width: 100vw;
-  height: 80vh;
+  height: 100%;
+  margin-bottom: 5vh;
+  overflow: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 
   .projectsWrapper {
     // border: 1px solid green;
@@ -9,22 +13,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     animation: animate 4s linear;
     animation-name: projectsApparition;
     animation-timing-function: ease;
 
     .project {
-      width: 55%;
-      height: 95%;
-      margin: 3vw;
+      width: clamp(15em, 35vw, 30em);
+      height: clamp(20vh, 65vh, 78vh);
+      margin: 2vh 4vw;
 
       .projectFooter {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        p {
+        .projectState {
           color: brown;
-          font-size: clamp(0.5em, 1.2vw, 1em);
+          font-size: clamp(0.8em, 1.5vw, 2em);
         }
       }
     }
@@ -84,6 +89,9 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+      h5 {
+        font-size: clamp(1.1em, 1.8vw, 2.4em);
+      }
       .codeIcon {
         margin-left: 6vw;
       }
@@ -106,18 +114,32 @@
     }
   }
 
-  @media only screen and (max-width: 1000px) {
-    .projectsWrapper {
-      flex-direction: column;
-    }
-  }
   @media only screen and (max-width: 700px) {
     .projectsWrapper {
-      margin: 5vh 0;
+      margin: 0;
+      .project {
+        margin: 4vh 10vw;
+        height: 40vh;
+      }
     }
   }
 }
+@media only screen and (min-width: 701px) {
+  .Projects {
+    height: 90%;
+  }
+}
 
+@media only screen and (max-width: 1024px) and (min-height: 1023px) {
+  .Projects {
+    height: 90%;
+    .project {
+      margin: 1vh 4vw !important;
+      height: 44vh !important;
+      width: 54vw !important;
+    }
+  }
+}
 .spaceApparition {
   position: absolute;
   z-index: -1;
@@ -142,4 +164,7 @@
   100% {
     opacity: 0;
   }
+}
+.Projects::-webkit-scrollbar {
+  display: none;
 }
