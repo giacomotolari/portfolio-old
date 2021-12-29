@@ -21,26 +21,48 @@ const Navbar = () => {
       {!devices.burgerMenu || burgerMenu === true ? (
         <ul className={!burgerMenu ? 'navBar' : 'burgerMenu'}>
           <li onClick={burgerMenuToggle}>
-            <NavLink id='navHome' className='navLink' to='/'>
+            <NavLink className='navLink' to='/'>
               HOME
             </NavLink>
           </li>
           <li onClick={burgerMenuToggle}>
-            <NavLink id='navProjects' className='navLink' to='/projects'>
+            <NavLink className='navLink' to='/projects'>
               PROJECTS
             </NavLink>
           </li>
           <li onClick={burgerMenuToggle}>
-            <NavLink id='navAbout' className='navLink' to='/about'>
+            <NavLink className='navLink' to='/about'>
               ABOUT
             </NavLink>
           </li>
 
           <li onClick={burgerMenuToggle}>
-            <NavLink id='navContact' className='navLink' to='/contact'>
+            <NavLink className='navLink' to='/contact'>
               CONTACT
             </NavLink>
           </li>
+          {burgerMenu && (
+            <>
+              <li>
+                <NavLink
+                  onClick={burgerMenuToggle}
+                  className='navLink'
+                  to='/skills'
+                >
+                  Skills
+                </NavLink>
+              </li>
+              <li>
+                <a
+                  className='navLink'
+                  href='https://www.canva.com/design/DAEvPnMB4Q4/XsYZ7VDnezevjvMAM3eMrA/view?utm_content=DAEvPnMB4Q4&utm_campaign=designshare&utm_medium=link&utm_source=viewer'
+                  target='blank'
+                >
+                  CV
+                </a>
+              </li>
+            </>
+          )}
         </ul>
       ) : (
         devices.burgerMenu &&
