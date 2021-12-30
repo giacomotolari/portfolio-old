@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Pushster&display=swap');
 
 .Home {
-    // border: 1px solid red;
-    width: 100%;
-    height: 95%;
-    // display: flex;
-    // flex-direction: row;
-   
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+
   .wrap {
     display: flex;
     position: relative;
@@ -14,119 +13,124 @@
     margin: 0;
     padding: 0;
   }
-  
+
   .left,
   .right {
     position: relative;
     width: 50%;
   }
-  
+
   .chouchin {
     position: absolute;
     top: -10px;
-  
+
     img {
       transform-origin: top center;
       animation: swing ease-in-out 2s infinite alternate;
     }
-    
+
     &.layer1 {
-      width: 200px;
+      // width: 200px;
+      width: clamp(5em,4vw,6em);
       z-index: 10;
+      filter: blur(1px);
     }
-    
+
     &.layer2 {
-      width: 150px;
+      // width: 150px;
+      width: clamp(4em,4vw,6em);
+
       filter: blur(2px);
       z-index: 5;
       opacity: 0.9;
     }
-    
+
     &.layer3 {
-      width: 100px;
+      // width: 100px;
+      width: clamp(3em,4vw,6em);
+
       filter: blur(4px);
       z-index: 1;
       opacity: 0.8;
     }
   }
-  
+
   .chouchin1 {
     left: 25%;
     z-index: 5;
   }
-  
+
   .chouchin2 {
     left: 50%;
-  
+
     img {
       animation-duration: 3s;
       animation-direction: alternate-reverse;
     }
   }
-  
+
   .chouchin3 {
     left: 70%;
-    
+
     img {
       animation-duration: 3.5s;
     }
   }
-  
+
   .chouchin4 {
     right: 25%;
-    
+
     img {
       animation-duration: 2.5s;
       animation-direction: alternate-reverse;
     }
   }
-  
+
   .chouchin5 {
     right: 50%;
-    
+
     img {
       animation-duration: 3.2s;
     }
   }
-  
+
   .chouchin6 {
     right: 70%;
-    
+
     img {
       animation-duration: 3.8s;
       animation-direction: alternate-reverse;
     }
   }
-  
+
   img {
     width: 100%;
     height: auto;
   }
-  
+
   @keyframes swing {
     0% {
       transform: rotate(8deg);
     }
-  
+
     100% {
       transform: rotate(-8deg);
     }
   }
-  
+
   .credit {
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
     bottom: 20px;
-    color: #F8DF8B;
+    color: #f8df8b;
     text-align: center;
-    
+
     a {
       color: currentColor;
     }
   }
-
 
   .content {
     position: absolute;

@@ -1,15 +1,17 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import brain from '../../asset/images/brain2.gif';
-import react from '../../asset/images/logos/react.png';
-import css from '../../asset/images/logos/css.png';
-import sass from '../../asset/images/logos/sass.png';
-// import giacomo from '../../asset/images/giacomo.mp4'
+// import js from '../../asset/images/logos/js.png';
+// import react from '../../asset/images/logos/react.png';
+// import node from '../../asset/images/logos/node2.png';
+// import html from '../../asset/images/logos/html2.png';
+// import mongoDB from '../../asset/images/logos/mongoDB.png';
+// import sass from '../../asset/images/logos/sass.png';
+// import css from '../../asset/images/logos/css2.png';
+import giacomo from '../../asset/images/giacomo5.png'
 
 const Home = () => {
   return (
     <div className='Home'>
-      
       <div className='wrap' id='wrap'>
         <div className='left'>
           <div
@@ -17,7 +19,7 @@ const Home = () => {
             data-speed-x='40'
             data-speed-y='20'
           >
-            <img src={brain} alt='...' className='chouchin' />
+            <img src={giacomo} alt='react' className='chouchin' />
           </div>
 
           <div
@@ -25,7 +27,7 @@ const Home = () => {
             data-speed-x='20'
             data-speed-y='10'
           >
-            <img src={react} alt='...' className='chouchin' />
+            <img src={giacomo} alt='js' className='chouchin' />
           </div>
 
           <div
@@ -33,7 +35,7 @@ const Home = () => {
             data-speed-x='10'
             data-speed-y='5'
           >
-            <img src={css} alt='...' className='chouchin' />
+            <img src={giacomo} alt='css' className='chouchin' />
           </div>
         </div>
 
@@ -43,7 +45,7 @@ const Home = () => {
             data-speed-x='40'
             data-speed-y='20'
           >
-            <img src={sass} alt='...' className='chouchin' />
+            <img src={giacomo} alt='node' className='chouchin' />
           </div>
 
           <div
@@ -51,11 +53,7 @@ const Home = () => {
             data-speed-x='20'
             data-speed-y='10'
           >
-            <img
-              src='https://1.bp.blogspot.com/-cEhj3_MMKi4/XQjuNuurZLI/AAAAAAABTQA/Rv_ZRt-6O0EB1sfJiLki4MXA-nOlf-DzQCLcBGAs/s800/kingyo_chouchin.png'
-              alt='...'
-              className='chouchin'
-            />
+            <img src={giacomo} alt='mongoDB' className='chouchin' />
           </div>
 
           <div
@@ -63,15 +61,9 @@ const Home = () => {
             data-speed-x='10'
             data-speed-y='5'
           >
-            <img
-              src='https://1.bp.blogspot.com/-cEhj3_MMKi4/XQjuNuurZLI/AAAAAAABTQA/Rv_ZRt-6O0EB1sfJiLki4MXA-nOlf-DzQCLcBGAs/s800/kingyo_chouchin.png'
-              alt='...'
-              className='chouchin'
-            />
+            <img src={giacomo} alt='html' className='chouchin' />
           </div>
         </div>
-
-       
       </div>
 
       <div className='content'>
@@ -80,7 +72,7 @@ const Home = () => {
 
           <ul className='content__container__list'>
             <li className='content__container__list__item'>Giacomo</li>
-            <li className='content__container__list__item'>a web developer</li>
+            <li className='content__container__list__item'>a  web developer</li>
             <li className='content__container__list__item'>full stack</li>
             <li className='content__container__list__item'>who I am!</li>
           </ul>
