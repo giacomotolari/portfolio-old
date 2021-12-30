@@ -1,14 +1,28 @@
 .About {
-  // border: 1px solid red;
-  color: $color-white;
-  height: 80vh;
+  
+  height: 90%;
+  .demo-bg {
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 11%;
+    width: 100%;
+    height: 80%;
+  }
+  .foto {
+    border: 3px solid red;
 
+    width: 40%;
+    height: 40vh;
+  }
   .about-text {
+    width: 100%;
     height: 40%;
     padding: 2vw;
     animation: animate 1.2s linear;
     animation-name: homeTextApparition;
     animation-timing-function: ease;
+    color: $color-white;
   }
   @media only screen and (max-width: 749px) {
     .about-text {
@@ -41,5 +55,4 @@
       opacity: 1;
     }
   }
-
 }

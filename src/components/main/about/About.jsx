@@ -1,9 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import giacomoDaniela from '../../../asset/images/giacomoDaniela.jpg';
 
 const About = () => {
   return (
     <div className='About'>
+     <img src={giacomoDaniela} className='demo-bg' alt='giacomokayak' />
       <div className='spaceApparitionAbout'></div>
       <div class='about-text'>
         <p>
@@ -18,6 +20,7 @@ const About = () => {
           which is why I chose to become a Web Developer.
         </p>
       </div>
+      {/* <img src={giacomokayak} className='foto' alt='giacomokayak' /> */}
     </div>
   );
 };
