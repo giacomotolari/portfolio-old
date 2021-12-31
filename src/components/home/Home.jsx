@@ -1,67 +1,70 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-// import js from '../../asset/images/logos/js.png';
-// import react from '../../asset/images/logos/react.png';
-// import node from '../../asset/images/logos/node2.png';
-// import html from '../../asset/images/logos/html2.png';
-// import mongoDB from '../../asset/images/logos/mongoDB.png';
-// import sass from '../../asset/images/logos/sass.png';
-// import css from '../../asset/images/logos/css2.png';
-import giacomo from '../../asset/images/giacomo5.png'
+import js from '../../asset/images/logos/js.png';
+import react from '../../asset/images/logos/react.png';
+import node from '../../asset/images/logos/node2.png';
+import html from '../../asset/images/logos/html2.png';
+import mongoDB from '../../asset/images/logos/mongoDB.png';
+import sass from '../../asset/images/logos/sass.png';
+import css from '../../asset/images/logos/css2.png';
+import giacomo1 from '../../asset/images/giacomo5.png';
+import giacomo2 from '../../asset/images/giacomo1.png';
+import giacomo3 from '../../asset/images/giacomo3.png';
+import giacomo4 from '../../asset/images/giacomo4.png';
 
 const Home = () => {
   return (
     <div className='Home'>
-      <div className='wrap' id='wrap'>
+      <div className='wrap'>
         <div className='left'>
           <div
-            className='chouchin-wrap chouchin1 chouchin layer1'
+            className='chouchin1 chouchin layer1'
             data-speed-x='40'
             data-speed-y='20'
           >
-            <img src={giacomo} alt='react' className='chouchin' />
+            <img src={giacomo1} alt='react' className='chouchin' />
           </div>
 
           <div
-            className='chouchin-wrap chouchin2 chouchin layer2'
+            className='chouchin2 chouchin layer2'
             data-speed-x='20'
             data-speed-y='10'
           >
-            <img src={giacomo} alt='js' className='chouchin' />
+            <img src={giacomo2} alt='js' className='chouchin' />
           </div>
 
           <div
-            className='chouchin-wrap chouchin3 chouchin layer3'
+            className='chouchin3 chouchin layer3'
             data-speed-x='10'
             data-speed-y='5'
           >
-            <img src={giacomo} alt='css' className='chouchin' />
+            <img src={giacomo4} alt='css' className='chouchin' />
           </div>
         </div>
 
         <div className='right'>
           <div
-            className='chouchin-wrap chouchin4 chouchin layer1'
+            className='chouchin4 chouchin layer1'
             data-speed-x='40'
             data-speed-y='20'
           >
-            <img src={giacomo} alt='node' className='chouchin' />
+            <img src={giacomo3} alt='node' className='chouchin' />
           </div>
 
           <div
-            className='chouchin-wrap chouchin5 chouchin layer2'
+            className='chouchin5 chouchin layer2'
             data-speed-x='20'
             data-speed-y='10'
           >
-            <img src={giacomo} alt='mongoDB' className='chouchin' />
+            <img src={giacomo4} alt='mongoDB' className='chouchin' />
           </div>
 
           <div
-            className='chouchin-wrap chouchin6 chouchin layer3'
+            className='chouchin6 chouchin layer3'
             data-speed-x='10'
             data-speed-y='5'
           >
-            <img src={giacomo} alt='html' className='chouchin' />
+            <img src={giacomo1} alt='html' className='chouchin' />
           </div>
         </div>
       </div>
@@ -72,7 +75,7 @@ const Home = () => {
 
           <ul className='content__container__list'>
             <li className='content__container__list__item'>Giacomo</li>
-            <li className='content__container__list__item'>a  web developer</li>
+            <li className='content__container__list__item'>a web developer</li>
             <li className='content__container__list__item'>full stack</li>
             <li className='content__container__list__item'>who I am!</li>
           </ul>
@@ -81,8 +84,15 @@ const Home = () => {
       <section className='sectionFoto'>
         <h1>GIACOMO TOLARI</h1>
 
-        {/* <div className='profilefoto'></div> */}
-        {/* <video img={giacomo} className='profilefoto' alt='giacomo'/> */}
+        <div className='logos'>
+          <img src={js} alt='js' />
+          <img src={css} alt='css' />
+          <img src={mongoDB} alt='mongoDB' />
+          <img src={node} alt='node' />
+          <img src={html} alt='html' />
+          <img src={react} alt='react' />
+          <img src={sass} alt='sass' />
+        </div>
       </section>
     </div>
   );
