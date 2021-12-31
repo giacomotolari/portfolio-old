@@ -51,20 +51,20 @@
         border: 3px solid rgb(42, 65, 165);
       }
       &.layer1 {
-        width: clamp(5em, 7vw, 9em);
+        width: clamp(3em, 8vw, 9em);
         z-index: 10;
         filter: blur(1px);
       }
 
       &.layer2 {
-        width: clamp(4em, 6vw, 8em);
+        width: clamp(2em, 7vw, 8em);
         filter: blur(2px);
         z-index: 5;
         opacity: 0.9;
       }
 
       &.layer3 {
-        width: clamp(3em, 5vw, 7em);
+        width: clamp(1em, 6vw, 7em);
         filter: blur(3px);
         z-index: 1;
         opacity: 0.8;
@@ -157,7 +157,7 @@
 
   .content {
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: clamp(5vh, 10vh, 20vh);
@@ -442,13 +442,15 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 90vw;
+    margin-top: 2%;
 
     img {
       animation: swing3 ease-in-out 2s infinite alternate;
-      width: clamp(5em, 7vw, 10em);
-      height: clamp(5em, 7vh, 10em);
-      margin: 5% 2%;
+      width: clamp(4em, 7vw, 10em);
+      height: clamp(4em, 7vh, 10em);
+      margin: 3% 3%;
     }
+
     @keyframes swing3 {
       0% {
         // width: 10%;
@@ -469,5 +471,9 @@
 @media only screen and (max-width: 500px) {
   .Home {
     flex-direction: column;
+    .logos {
+      margin-top: 50%;
+    }
   }
+ 
 }
