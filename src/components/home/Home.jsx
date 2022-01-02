@@ -5,7 +5,6 @@ import react from '../../asset/images/logos/react.png';
 import node from '../../asset/images/logos/node2.png';
 import html from '../../asset/images/logos/html2.png';
 import mongoDB from '../../asset/images/logos/mongoDB.png';
-import sass from '../../asset/images/logos/sass.png';
 import css from '../../asset/images/logos/css2.png';
 import giacomo1 from '../../asset/images/giacomo5.png';
 import giacomo2 from '../../asset/images/giacomo1.png';
@@ -75,7 +74,7 @@ const Home = () => {
 
           <ul className='content__container__list'>
             <li className='content__container__list__item'>Giacomo</li>
-            <li className='content__container__list__item'>a web developer</li>
+            <li className='content__container__list__item'>the web developer</li>
             <li className='content__container__list__item'>full stack</li>
             <li className='content__container__list__item'>who I am!</li>
           </ul>
@@ -91,7 +90,7 @@ const Home = () => {
           <img src={node} alt='node' />
           <img src={html} alt='html' />
           <img src={react} alt='react' />
-          <img src={sass} alt='sass' />
+         
         </div>
       </section>
     </div>
