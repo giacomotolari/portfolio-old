@@ -2,16 +2,14 @@
 import React from 'react';
 import FooterNavbar from './FooterNavbar';
 import { useTheme } from '../../ThemeContext';
-import FooterIcons from './FooterIcons'
+import FooterIcons from './FooterIcons';
 
 const Footer = () => {
   const { devices } = useTheme();
 
   return (
     <div className='Footer'>
-      {!devices.burgerMenu && (
-       <FooterIcons />
-      )}
+      {!devices.burgerMenu && <FooterIcons />}
       <FooterNavbar />
     </div>
   );

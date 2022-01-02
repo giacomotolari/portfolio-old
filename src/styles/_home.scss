@@ -161,9 +161,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 8vh;
-    width: clamp(80%, 40vw, 40%);
+    width: clamp(15em, 40vw, 40%);
     overflow: hidden;
-    font-size: clamp(1.3em, 2vw, 3em) !important;
+    font-size: clamp(1.3em, 4vw, 3em) !important;
     font-family: 'Lato', sans-serif;
     line-height: 6vh;
     color: #ecf0f1;

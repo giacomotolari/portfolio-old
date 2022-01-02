@@ -3,7 +3,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTheme } from '../../ThemeContext';
-import FooterIcons from '../footer/FooterIcons'
+import FooterIcons from '../footer/FooterIcons';
 
 const Navbar = () => {
   const { burgerMenu, setBurgerMenu, devices } = useTheme();
