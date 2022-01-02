@@ -1,28 +1,32 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import giacomoDaniela from '../../../asset/images/giacomoDaniela.jpg';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const About = () => {
+  let navigate = useNavigate();
   return (
-    <div className='About'>
+    <div
+      className='About'
+      onKeyDown={() => {
+        navigate('/contact');
+      }}
+    >
       <img src={giacomoDaniela} className='demo-bg' alt='giacomokayak' />
       <div className='spaceApparitionAbout'></div>
       <div class='about-text'>
-
-      <p>
+        <p>
           I like the idea of being able to work with people from all over the
           world, peole of different professions, knowing that I will never stop
           learning and that I will be able to use my imagination in my work,
           which is why I chose to become a Web Developer.
         </p>
-        
+
         <p>
           I am a 30 year old guy from Italy (Sardinia), I love sport, music and
           cooking (more eating).
         </p>
 
-        
         <p>
           I started my career at school at the age of 15, where I learned the
           basics of HTML. In 2020 I started studying again with courses on Udemy

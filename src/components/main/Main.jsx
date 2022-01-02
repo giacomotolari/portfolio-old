@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Projects from './projects/Projects';
 import About from './about/About';
 import Contact from './contact/Contact';
@@ -9,6 +9,8 @@ import Curriculum from './curriculum/Curriculum';
 import Home from '../home/Home';
 
 const Main = () => {
+  
+
   return (
     <div className='Main'>
       <Routes>
