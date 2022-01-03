@@ -445,11 +445,33 @@
     width: 90vw;
     margin-top: 2%;
 
+    p {
+      position: absolute;
+      top: 35%;
+      font-weight: bolder;
+      animation: apparition2 ease-in-out 10s infinite alternate;
+      animation-delay: 10s;
+      opacity: 0;
+    }
+    @keyframes apparition2 {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        color: $color-yellow;
+        opacity: 1;
+        transform: scale(1.3);
+      }
+      100% {
+        opacity: 0;
+      }
+    }
     img {
       animation: swing3 ease-in-out 2s infinite alternate;
       width: clamp(4em, 7vw, 10em);
       height: clamp(4em, 7vh, 10em);
       margin: 3% 3%;
+      cursor: pointer;
     }
 
     @keyframes swing3 {
@@ -472,8 +494,14 @@
 @media only screen and (max-width: 500px) {
   .Home {
     flex-direction: column;
+    .wrap {
+      margin: 7% 7% 0 0;
+    }
     .logos {
       margin-top: 50%;
+      p {
+        top: 25%;
+      }
     }
   }
 }

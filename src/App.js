@@ -17,8 +17,6 @@ import { useTheme } from './ThemeContext';
 function App() {
   const { burgerMenu } = useTheme();
 
-
-
   return (
     <Router>
       <div className='App' id='app-background'>

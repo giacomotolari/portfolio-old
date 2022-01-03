@@ -2,11 +2,11 @@
 import React from 'react';
 import { Routes, Route} from 'react-router-dom';
 import Projects from './projects/Projects';
-import About from './about/About';
-import Contact from './contact/Contact';
-import Skills from './skills/Skills';
-import Curriculum from './curriculum/Curriculum';
-import Home from '../home/Home';
+import About from './About';
+import Contact from './Contact';
+import Skills from './Skills';
+import Curriculum from './Curriculum';
+import Home from './Home';
 
 const Main = () => {
   

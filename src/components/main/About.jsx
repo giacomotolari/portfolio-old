@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 // import giacomoDaniela from '../../../asset/images/giacomoDaniela.jpg';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
   let navigate = useNavigate();

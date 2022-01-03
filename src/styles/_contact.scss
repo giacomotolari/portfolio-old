@@ -1,17 +1,20 @@
 .Contact {
-  padding-top: 8vh;
+  padding-top: 7vh;
   background-image: url('../asset/images/background-image.jpg');
   background-repeat: no-repeat;
   background-size: 35%;
   animation: animate 1s linear;
   animation-name: backgroudMove;
   animation-timing-function: ease-out;
-
+h2{
+  // font-family: roboto;
+  font-family: fantasy, roboto;
+}
   .contact {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 20px;
+    // padding: 20px;
 
     .personalData {
       display: flex;
@@ -55,7 +58,7 @@
       padding: 12px;
       margin: 15px;
       width: 12vw;
-      height: 1vh;
+      height: 5vh;
       border-radius: 7%;
       border: 2px solid $color-yellow;
       background-color: black;
@@ -65,11 +68,13 @@
     @media only screen and (min-width: 400px) and (max-width: 750px) {
       .input {
         width: 32vw;
+        height: 4vh;
       }
     }
     @media only screen and (min-width: 201px) and (max-width: 399px) {
       .input {
         width: max-content;
+        height: 5vh;
       }
     }
     @media only screen and (max-width: 200px) {
@@ -78,8 +83,8 @@
       }
     }
     #msg {
-      width: 30%;
-      height: 20vh;
+      width: 35%;
+      height: 30vh;
       padding: 10px;
       margin: 15px;
       border: 2px solid $color-yellow;
@@ -95,11 +100,11 @@
     @media only screen and (max-width: 400px) {
       #msg {
         width: 75vw;
-        height: 8vh;
+        height: 25vh;
       }
     }
     #send {
-      padding: 8px;
+      padding: 3px 8px;
       width: 100px;
       margin: 10px;
       border-radius: 7%;
@@ -121,8 +126,6 @@
       margin-top: -12vh;
     }
   }
-
-
 
   footer {
     text-align: center;
