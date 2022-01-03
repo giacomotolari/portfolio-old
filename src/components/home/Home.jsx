@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import js from '../../asset/images/logos/js.png';
 import react from '../../asset/images/logos/react.png';
 import node from '../../asset/images/logos/node2.png';
@@ -13,18 +13,10 @@ import giacomo3 from '../../asset/images/giacomo3.png';
 import giacomo4 from '../../asset/images/giacomo4.png';
 
 const Home = () => {
-  let navigate = useNavigate();
+
 
   return (
-    <div
-      className='Home'
-      onKeyDown={() => {
-        navigate('/projects');
-      }}
-      // onKeyUp={() => {
-      //   navigate('/skills');
-      // }}
-    >
+    <div className='Home'>
       <div className='wrap'>
         <div className='left'>
           <div

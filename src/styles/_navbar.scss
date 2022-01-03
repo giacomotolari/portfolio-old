@@ -43,14 +43,34 @@
   color: $color-yellow;
   width: calc(2em + 2vw);
   height: calc(1.5em + 2vh);
+  animation: burgerFocus ease-in-out 10s infinite;
+  animation-delay: 10s;
 }
+@keyframes burgerFocus {
+  0% {
+    // width: 10%;
+    background-color: rgba(252, 248, 229, 0.76);
+    color: red;
+    transform: scale(1.2);
+  }
+  10% {
+    background-color: black;
+    color: $color-yellow;
+    transform: scale(1);
+  }
 
+  100% {
+    // transform: rotate(-18deg);
+    // box-shadow: -50px 322.5px 115px rgb(42, 99, 165);
+  }
+}
 .burgerX {
   color: $color-yellow;
   position: absolute;
   right: 6.5vw;
   top: -2vh;
   font-size: clamp(2em, 2vw, 3em);
+  animation: burgerFocus ease-in-out 8s infinite alternate;
 }
 
 @media only screen and (max-width: 749px) {
