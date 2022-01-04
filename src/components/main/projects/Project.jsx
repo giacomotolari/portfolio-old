@@ -4,9 +4,7 @@ function Project(props) {
   const {
     title,
     description,
-    // tecnologies,
     state,
-    // startDate,
     gitHubUrl,
     projectUrl,
   } = props.item;

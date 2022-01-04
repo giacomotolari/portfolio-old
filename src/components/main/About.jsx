@@ -7,7 +7,6 @@ const About = () => {
   let navigate = useNavigate();
   return (
     <div className='About'>
-      {/* <img src={giacomoDaniela} className='demo-bg' alt='giacomokayak' /> */}
       <div className='spaceApparitionAbout'></div>
       <div class='about-text'>
         <p>

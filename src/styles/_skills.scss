@@ -324,14 +324,18 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     padding: 0 0 0 0;
-    animation: animate 4s linear;
-    animation-name: homeTextApparition;
+    animation: animate 6s linear;
+    animation-name: apparition;
     animation-timing-function: ease;
     ul {
       margin: 2% 10%;
     }
+    li{
+      color: white;
+    }
     h4 {
       color: $color-red;
+      font-weight: bolder;
     }
   }
 
