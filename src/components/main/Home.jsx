@@ -105,14 +105,14 @@ const Home = () => {
 
       <div className='content'>
         <div className='content__container'>
-          <p className='content__container__text'>I'm</p>
+          <p className='content__container__text'>I am</p>
           <ul className='content__container__list'>
             <li className='content__container__list__item'>Giacomo</li>
             <li className='content__container__list__item'>
               the web developer
             </li>
             <li className='content__container__list__item'>full stack</li>
-            <li className='content__container__list__item'>who I am!</li>
+            {/* <li className='content__container__list__item'>responsive</li> */}
           </ul>
         </div>
       </div>

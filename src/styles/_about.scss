@@ -12,30 +12,29 @@
     animation: textBg ease-in-out 10s infinite alternate;
     p {
       padding: 0 2%;
-      font-size: clamp(1.1em, 2vw, 3em) !important;
+      font-size: clamp(1em, 1.8vw, 2.8em) !important;
     }
     @media only screen and (max-width: 330px) {
       p {
-        font-size: 0.9em !important;
+        font-size: 0.8em !important;
       }
     }
-    @media only screen and (max-width: 414px) and (min-height: 730px){
+    @media only screen and (max-width: 414px) and (min-height: 730px) {
       p {
-        font-size: 1.2em !important;
+        font-size: 1.1em !important;
       }
     }
-    @media only screen and (max-width: 768px) and (min-height: 1024px){
+    @media only screen and (max-width: 768px) and (min-height: 1024px) {
       p {
-        font-size: 1.5em !important;
+        font-size: 1.3em !important;
       }
     }
-    @media only screen and (max-width: 1025px) and (min-height: 1024px){
+    @media only screen and (max-width: 1025px) and (min-height: 1024px) {
       p {
-        font-size: 1.8em !important;
-       
+        font-size: 1.6em !important;
       }
     }
-    
+
     span,
     a {
       font-weight: bolder;

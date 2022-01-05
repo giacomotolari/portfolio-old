@@ -11,30 +11,30 @@ const About = () => {
       <div class='about-text'>
         <p>
           I like the idea of being able to work with people from all over the
-          world, peole of different professions, knowing that I will never stop
-          learning and that I will be able to use my imagination in my work,
-          which is why I chose to become a Web Developer.
+          world and people with different professions. To keep learning and
+          using my imagination in my work has always been my dream, which is why
+          I chose to become a Web Developer.
         </p>
-
         <p>
-          I am a 30 year old guy from Italy (Sardinia), I love sport, music and
-          cooking (more eating).
+          Besides my tech fanaticism, I am a normal 30 years young man and
+          originally from Italy (Sardinia) and I would describe myself as a
+          sporty and creative person who loves to cook (and eat).
         </p>
-
         <p>
-          I started my career at school at the age of 15, where I learned the
-          basics of HTML. In 2020 I started studying again with courses on Udemy
-          and Codecademy then on 01.03.2021 I started the Full Stack Web
-          Developer school at DCI (Digital Career Institut) which will end on
-          28.02.22.
+          I started my programming career at school at the age of 15, where I
+          learned the basics of HTML. In 2020, I decided to study again by
+          accomplishing courses in Udemy and Codecademy. Within the near future,
+          I will be graduating from the Full Stack Web Developer course at DCI
+          (Digital Career Institut), where I gained fundamental expertise for my
+          digital career path.
         </p>
         <p>
           Most of the practice I have done is building web pages for friends and
           relatives that will serve them for their business and private
-          purposes. The pages are still under construction, every time I learn
-          something new I try to put it into these {''}
+          purposes. The pages are still under construction. However, every time
+          I learn something new I improve the {''}
           <span onClick={() => navigate('/projects')}>pages</span>
-          {''} and make them better and better.
+          {''} and build them into a better version.
         </p>
         <p>
           Visit my{' '}
@@ -50,7 +50,7 @@ const About = () => {
           </a>{' '}
           profile for more details or just {''}
           <span onClick={() => navigate('/contact')}>contact</span> {''}
-          me
+          me under contact.
         </p>
       </div>
     </div>
