@@ -50,7 +50,7 @@ const About = () => {
           </a>{' '}
           profile for more details or just {''}
           <span onClick={() => navigate('/contact')}>contact</span> {''}
-          me under contact.
+          me.
         </p>
       </div>
     </div>

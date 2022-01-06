@@ -36,11 +36,12 @@ body {
   @import './skills';
 
   @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Lato:wght@300&display=swap');
 
   max-width: 100vw;
   max-height: 100vh;
   color: $color-white;
-
+  font-family: 'Belleza', sans-serif;
   .navLink {
     color: $color-yellow;
     margin: 5px;
