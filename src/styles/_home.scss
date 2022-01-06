@@ -161,9 +161,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 8vh;
-    width: clamp(15em, 40vw, 40%);
+    width: clamp(19em, 75vw, 30em);
     overflow: hidden;
-    font-size: clamp(1.3em, 4vw, 3em) !important;
+    font-size: clamp(1em, 3.5vw, 2.5em) !important;
     font-family: 'Lato', sans-serif;
     line-height: 6vh;
     color: #ecf0f1;
@@ -239,71 +239,71 @@
     }
   }
 
-  // @-webkit-keyframes change {
-  //   0%,
-  //   12.66%,
-  //   100% {
-  //     transform: translate3d(0, 0, 0);
-  //   }
-  //   16.66%,
-  //   29.32% {
-  //     transform: translate3d(0, -25%, 0);
-  //   }
-  //   33.32%,
-  //   45.98% {
-  //     transform: translate3d(0, -50%, 0);
-  //   }
-  //   49.98%,
-  //   62.64% {
-  //     transform: translate3d(0, -75%, 0);
-  //   }
-  //   66.64%,
-  //   79.3% {
-  //     transform: translate3d(0, -50%, 0);
-  //   }
-  //   83.3%,
-  //   95.96% {
-  //     transform: translate3d(0, -25%, 0);
-  //   }
-  // }
+  @-webkit-keyframes change {
+    0%,
+    12.66%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    16.66%,
+    29.32% {
+      transform: translate3d(0, -25%, 0);
+    }
+    33.32%,
+    45.98% {
+      transform: translate3d(0, -50%, 0);
+    }
+    49.98%,
+    62.64% {
+      transform: translate3d(0, -75%, 0);
+    }
+    66.64%,
+    79.3% {
+      transform: translate3d(0, -50%, 0);
+    }
+    83.3%,
+    95.96% {
+      transform: translate3d(0, -25%, 0);
+    }
+  }
 
-  // @-o-keyframes opacity {
-  //   0%,
-  //   100% {
-  //     opacity: 0;
-  //   }
-  //   50% {
-  //     opacity: 1;
-  //   }
-  // }
+  @-o-keyframes opacity {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
 
-  // @-o-keyframes change {
-  //   0%,
-  //   12.66%,
-  //   100% {
-  //     transform: translate3d(0, 0, 0);
-  //   }
-  //   16.66%,
-  //   29.32% {
-  //     transform: translate3d(0, -25%, 0);
-  //   }
-  //   33.32%,
-  //   45.98% {
-  //     transform: translate3d(0, -50%, 0);
-  //   }
-  //   49.98%,
-  //   62.64% {
-  //     transform: translate3d(0, -75%, 0);
-  //   }
-  //   66.64%,
-  //   79.3% {
-  //     transform: translate3d(0, -50%, 0);
-  //   }
-  //   83.3%,
-  //   95.96% {
-  //     transform: translate3d(0, -25%, 0);
-  //   }
-  // }
+  @-o-keyframes change {
+    0%,
+    12.66%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    16.66%,
+    29.32% {
+      transform: translate3d(0, -25%, 0);
+    }
+    33.32%,
+    45.98% {
+      transform: translate3d(0, -50%, 0);
+    }
+    49.98%,
+    62.64% {
+      transform: translate3d(0, -75%, 0);
+    }
+    66.64%,
+    79.3% {
+      transform: translate3d(0, -50%, 0);
+    }
+    83.3%,
+    95.96% {
+      transform: translate3d(0, -25%, 0);
+    }
+  }
 
   @-moz-keyframes opacity {
     0%,
@@ -315,33 +315,33 @@
     }
   }
 
-  // @-moz-keyframes change {
-  //   0%,
-  //   12.66%,
-  //   100% {
-  //     transform: translate3d(0, 0, 0);
-  //   }
-  //   16.66%,
-  //   29.32% {
-  //     transform: translate3d(0, -25%, 0);
-  //   }
-  //   33.32%,
-  //   45.98% {
-  //     transform: translate3d(0, -50%, 0);
-  //   }
-  //   49.98%,
-  //   62.64% {
-  //     transform: translate3d(0, -75%, 0);
-  //   }
-  //   66.64%,
-  //   79.3% {
-  //     transform: translate3d(0, -50%, 0);
-  //   }
-  //   83.3%,
-  //   95.96% {
-  //     transform: translate3d(0, -25%, 0);
-  //   }
-  // }
+  @-moz-keyframes change {
+    0%,
+    12.66%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    16.66%,
+    29.32% {
+      transform: translate3d(0, -25%, 0);
+    }
+    33.32%,
+    45.98% {
+      transform: translate3d(0, -50%, 0);
+    }
+    49.98%,
+    62.64% {
+      transform: translate3d(0, -75%, 0);
+    }
+    66.64%,
+    79.3% {
+      transform: translate3d(0, -50%, 0);
+    }
+    83.3%,
+    95.96% {
+      transform: translate3d(0, -25%, 0);
+    }
+  }
 
   @keyframes opacity {
     0%,
@@ -355,31 +355,31 @@
 
   @keyframes change {
     0%,
-    12.66%,
-    100% {
-      transform: translate3d(0, 0, 0);
+      12.66%,
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+      16.66%,
+      29.32% {
+        transform: translate3d(0, -25%, 0);
+      }
+      33.32%,
+      45.98% {
+        transform: translate3d(0, -50%, 0);
+      }
+      49.98%,
+      62.64% {
+        transform: translate3d(0, -75%, 0);
+      }
+      66.64%,
+      79.3% {
+        transform: translate3d(0, -50%, 0);
+      }
+      83.3%,
+      95.96% {
+        transform: translate3d(0, -25%, 0);
+      }
     }
-    16.66%,
-    29.32% {
-      transform: translate3d(0, -33%, 0);
-    }
-    33.32%,
-    45.98% {
-      transform: translate3d(0, -66%, 0);
-    }
-    49.98%,
-    62.64% {
-      transform: translate3d(0, -33%, 0);
-    }
-    66.64%,
-    79.3% {
-      transform: translate3d(0, 0%, 0);
-    }
-    83.3%,
-    95.96% {
-      transform: translate3d(0, -33%, 0);
-    }
-  }
 
   .sectionFoto {
     // border: 1px solid blue;

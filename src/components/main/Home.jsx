@@ -107,12 +107,13 @@ const Home = () => {
         <div className='content__container'>
           <p className='content__container__text'>I am</p>
           <ul className='content__container__list'>
-            <li className='content__container__list__item'>Giacomo</li>
+            <li className='content__container__list__item'>Giacomo Tolari</li>
             <li className='content__container__list__item'>
-              the web developer
+            a full stack web developer
             </li>
-            <li className='content__container__list__item'>full stack</li>
-            {/* <li className='content__container__list__item'>responsive</li> */}
+            <li className='content__container__list__item'>Giacomo Tolari</li>
+            <li className='content__container__list__item'>a full stack web developer</li> 
+            {/* // update animation change if add a new list */}
           </ul>
         </div>
       </div>
