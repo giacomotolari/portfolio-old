@@ -75,6 +75,7 @@
 
     .chouchin2 {
       left: 50%;
+      z-index: 4;
 
       img {
         animation-duration: 3s;
@@ -85,34 +86,38 @@
 
     .chouchin3 {
       left: 70%;
+      z-index: 3;
 
       img {
-        animation-duration: 3.5s;
+        animation-duration: 3s;
       }
     }
 
     .chouchin4 {
       right: 25%;
+      z-index: 6;
 
       img {
-        animation-duration: 2.5s;
+        animation-duration: 3s;
         animation-direction: alternate-reverse;
       }
     }
 
     .chouchin5 {
       right: 50%;
+      z-index: 5;
 
       img {
-        animation-duration: 3.2s;
+        animation-duration: 3s;
       }
     }
 
     .chouchin6 {
       right: 70%;
+      z-index: 3;
 
       img {
-        animation-duration: 3.8s;
+        animation-duration: 3s;
         animation-direction: alternate-reverse;
       }
     }
@@ -125,13 +130,15 @@
     @keyframes swing1 {
       0% {
         width: 130%;
-        background-color: rgba(194, 182, 114, 0.76);
         border: 3px;
         border-radius: 7%;
         transform: rotate(18deg);
         // box-shadow: 100px 75px 30px red;
       }
-
+      50% {
+        background-color: rgb(222, 223, 192);
+        box-shadow: 10px 10px 15px brown;
+      }
       100% {
         transform: rotate(-18deg);
       }
@@ -139,13 +146,15 @@
     @keyframes swing2 {
       0% {
         width: 130%;
-        background-color: rgba(114, 142, 194, 0.76);
         border: 3px;
         border-radius: 7%;
         transform: rotate(18deg);
         // box-shadow: -100px 75px 30px brown;
       }
-
+      50% {
+        background-color: rgb(114, 142, 194);
+        box-shadow: 10px 10px 15px brown;
+      }
       100% {
         transform: rotate(-18deg);
       }
@@ -484,6 +493,9 @@
         border-radius: 17%;
         transform: rotate(18deg);
         box-shadow: -50px -322.5px 115px rgb(122, 165, 42);
+      }
+      50% {
+        box-shadow: 10px 10px 15px brown;
       }
 
       100% {

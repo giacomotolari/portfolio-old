@@ -109,10 +109,12 @@ const Home = () => {
           <ul className='content__container__list'>
             <li className='content__container__list__item'>Giacomo Tolari</li>
             <li className='content__container__list__item'>
-            a full stack web developer
+              a full stack web developer
             </li>
             <li className='content__container__list__item'>Giacomo Tolari</li>
-            <li className='content__container__list__item'>a full stack web developer</li> 
+            <li className='content__container__list__item'>
+              a full stack web developer
+            </li>
             {/* // update animation change if add a new list */}
           </ul>
         </div>
@@ -123,6 +125,7 @@ const Home = () => {
         <div className='logos'>
           <p ref={clickAlert}>CLICK THE ICONS BELOW</p>
           <img
+            style={icon1 === true ? { height: '100%' } : {}}
             onClick={() => {
               setIcon1(icon1 === false ? true : false);
               hideClickAlert();
@@ -132,6 +135,7 @@ const Home = () => {
           />
 
           <img
+            style={icon2 === true ? { height: '100%' } : {}}
             onClick={() => {
               setIcon2(icon2 === false ? true : false);
               hideClickAlert();
@@ -140,6 +144,7 @@ const Home = () => {
             alt='css'
           />
           <img
+            style={icon3 === true ? { height: '100%' } : {}}
             onClick={() => {
               setIcon3(icon3 === false ? true : false);
               hideClickAlert();
@@ -148,6 +153,7 @@ const Home = () => {
             alt='js'
           />
           <img
+            style={icon4 === true ? { height: '100%' } : {}}
             onClick={() => {
               setIcon4(icon4 === false ? true : false);
               hideClickAlert();
@@ -156,6 +162,7 @@ const Home = () => {
             alt='react'
           />
           <img
+            style={icon5 === true ? { height: '100%' } : {}}
             onClick={() => {
               setIcon5(icon5 === false ? true : false);
               hideClickAlert();
@@ -164,6 +171,7 @@ const Home = () => {
             alt='node'
           />
           <img
+            style={icon6 === true ? { height: '100%' } : {}}
             onClick={() => {
               setIcon6(icon6 === false ? true : false);
               hideClickAlert();
