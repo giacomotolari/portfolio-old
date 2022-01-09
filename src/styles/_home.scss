@@ -16,6 +16,7 @@
     animation: animate 3.8s linear;
     animation-name: apparition;
     animation-timing-function: ease;
+    // animation-delay: 5s;
 
     .left,
     .right {
@@ -26,10 +27,6 @@
       img {
         transform-origin: top center;
         animation: swing1 ease-in-out 2s infinite alternate;
-      }
-      img:hover {
-        background-color: rgb(154, 185, 81);
-        border: 3px solid rgb(42, 65, 165);
       }
     }
     .right {
@@ -132,7 +129,7 @@
         border: 3px;
         border-radius: 7%;
         transform: rotate(18deg);
-        box-shadow: 100px 75px 30px red;
+        // box-shadow: 100px 75px 30px red;
       }
 
       100% {
@@ -146,7 +143,7 @@
         border: 3px;
         border-radius: 7%;
         transform: rotate(18deg);
-        box-shadow: -100px 75px 30px brown;
+        // box-shadow: -100px 75px 30px brown;
       }
 
       100% {
@@ -176,8 +173,7 @@
       padding: 0 0 0 10vw;
       font-weight: bolder;
 
-    font-family: 'Belleza', sans-serif;
-
+      font-family: 'Belleza', sans-serif;
 
       &:before {
         content: '[';
@@ -358,31 +354,31 @@
 
   @keyframes change {
     0%,
-      12.66%,
-      100% {
-        transform: translate3d(0, 0, 0);
-      }
-      16.66%,
-      29.32% {
-        transform: translate3d(0, -25%, 0);
-      }
-      33.32%,
-      45.98% {
-        transform: translate3d(0, -50%, 0);
-      }
-      49.98%,
-      62.64% {
-        transform: translate3d(0, -75%, 0);
-      }
-      66.64%,
-      79.3% {
-        transform: translate3d(0, -50%, 0);
-      }
-      83.3%,
-      95.96% {
-        transform: translate3d(0, -25%, 0);
-      }
+    12.66%,
+    100% {
+      transform: translate3d(0, 0, 0);
     }
+    16.66%,
+    29.32% {
+      transform: translate3d(0, -25%, 0);
+    }
+    33.32%,
+    45.98% {
+      transform: translate3d(0, -50%, 0);
+    }
+    49.98%,
+    62.64% {
+      transform: translate3d(0, -75%, 0);
+    }
+    66.64%,
+    79.3% {
+      transform: translate3d(0, -50%, 0);
+    }
+    83.3%,
+    95.96% {
+      transform: translate3d(0, -25%, 0);
+    }
+  }
 
   .sectionFoto {
     // border: 1px solid blue;
@@ -465,7 +461,7 @@
         opacity: 1;
         transform: scale(1.3);
       }
-      20%{
+      20% {
         opacity: 0;
       }
       100% {
