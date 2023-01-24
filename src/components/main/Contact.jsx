@@ -92,7 +92,6 @@ const Contact = () => {
               />
             </svg>
           </a> */}
-
           {/* slack icon */}
           <a
             className='navLink'
