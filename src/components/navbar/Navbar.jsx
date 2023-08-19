@@ -37,11 +37,11 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-          <li onClick={burgerMenuToggle}>
+          {/* <li onClick={burgerMenuToggle}>
             <NavLink className='navLink' to='/contact'>
               CONTACT
             </NavLink>
-          </li>
+          </li> */}
           {burgerMenu && (
             <>
               <li>
