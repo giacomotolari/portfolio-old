@@ -77,8 +77,6 @@ const Contact = () => {
 
           {/* Call icon */}
 
-<<<<<<< HEAD
-=======
           {/* <a className='navLink' href='tel:+4915901466337' target='blank'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -94,7 +92,7 @@ const Contact = () => {
               />
             </svg>
           </a> */}
->>>>>>> 109d804 (hide mobile number)
+
           {/* slack icon */}
           <a
             className='navLink'
