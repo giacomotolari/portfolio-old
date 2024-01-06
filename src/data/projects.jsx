@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: 'Al Porto',
+    title: 'Al Giacomo',
     description: 'Poems',
     technologies: [
       'HTML',
